@@ -10,33 +10,102 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CommitteesRouteImport } from './routes/committees'
+import { Route as InternshipsRouteImport } from './routes/internships'
+import { Route as OlympiadsRouteImport } from './routes/olympiads'
+import { Route as ShootingRouteImport } from './routes/shooting'
+import { Route as WritingRouteImport } from './routes/writing'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CommitteesRoute = CommitteesRouteImport.update({
+  id: '/committees',
+  path: '/committees',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InternshipsRoute = InternshipsRouteImport.update({
+  id: '/internships',
+  path: '/internships',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OlympiadsRoute = OlympiadsRouteImport.update({
+  id: '/olympiads',
+  path: '/olympiads',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ShootingRoute = ShootingRouteImport.update({
+  id: '/shooting',
+  path: '/shooting',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WritingRoute = WritingRouteImport.update({
+  id: '/writing',
+  path: '/writing',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/committees': typeof CommitteesRoute
+  '/internships': typeof InternshipsRoute
+  '/olympiads': typeof OlympiadsRoute
+  '/shooting': typeof ShootingRoute
+  '/writing': typeof WritingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/committees': typeof CommitteesRoute
+  '/internships': typeof InternshipsRoute
+  '/olympiads': typeof OlympiadsRoute
+  '/shooting': typeof ShootingRoute
+  '/writing': typeof WritingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/committees': typeof CommitteesRoute
+  '/internships': typeof InternshipsRoute
+  '/olympiads': typeof OlympiadsRoute
+  '/shooting': typeof ShootingRoute
+  '/writing': typeof WritingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/committees'
+    | '/internships'
+    | '/olympiads'
+    | '/shooting'
+    | '/writing'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/committees'
+    | '/internships'
+    | '/olympiads'
+    | '/shooting'
+    | '/writing'
+  id:
+    | '__root__'
+    | '/'
+    | '/committees'
+    | '/internships'
+    | '/olympiads'
+    | '/shooting'
+    | '/writing'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CommitteesRoute: typeof CommitteesRoute
+  InternshipsRoute: typeof InternshipsRoute
+  OlympiadsRoute: typeof OlympiadsRoute
+  ShootingRoute: typeof ShootingRoute
+  WritingRoute: typeof WritingRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,22 +117,52 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/committees': {
+      id: '/committees'
+      path: '/committees'
+      fullPath: '/committees'
+      preLoaderRoute: typeof CommitteesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/internships': {
+      id: '/internships'
+      path: '/internships'
+      fullPath: '/internships'
+      preLoaderRoute: typeof InternshipsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/olympiads': {
+      id: '/olympiads'
+      path: '/olympiads'
+      fullPath: '/olympiads'
+      preLoaderRoute: typeof OlympiadsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/shooting': {
+      id: '/shooting'
+      path: '/shooting'
+      fullPath: '/shooting'
+      preLoaderRoute: typeof ShootingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/writing': {
+      id: '/writing'
+      path: '/writing'
+      fullPath: '/writing'
+      preLoaderRoute: typeof WritingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CommitteesRoute: CommitteesRoute,
+  InternshipsRoute: InternshipsRoute,
+  OlympiadsRoute: OlympiadsRoute,
+  ShootingRoute: ShootingRoute,
+  WritingRoute: WritingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
