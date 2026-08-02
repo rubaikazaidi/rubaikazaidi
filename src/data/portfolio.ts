@@ -2,7 +2,8 @@ export type PortfolioDocument = {
   /** Short label shown on the document slot, e.g. "IMO 2025 Certificate" */
   label: string;
   /** Put the file in public/documents/ and reference it here, e.g. "/documents/imo-2025.pdf" */
-  file?: string;
+  file?: string | undefined;
+
   type?: "certificate" | "letter" | "publication" | "photo" | "other";
 };
 

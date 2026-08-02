@@ -11,6 +11,8 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CommitteesRouteImport } from './routes/committees'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DocumentsRouteImport } from './routes/documents'
 import { Route as InternshipsRouteImport } from './routes/internships'
 import { Route as OlympiadsRouteImport } from './routes/olympiads'
 import { Route as ShootingRouteImport } from './routes/shooting'
@@ -24,6 +26,16 @@ const IndexRoute = IndexRouteImport.update({
 const CommitteesRoute = CommitteesRouteImport.update({
   id: '/committees',
   path: '/committees',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocumentsRoute = DocumentsRouteImport.update({
+  id: '/documents',
+  path: '/documents',
   getParentRoute: () => rootRouteImport,
 } as any)
 const InternshipsRoute = InternshipsRouteImport.update({
@@ -50,6 +62,8 @@ const WritingRoute = WritingRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/committees': typeof CommitteesRoute
+  '/contact': typeof ContactRoute
+  '/documents': typeof DocumentsRoute
   '/internships': typeof InternshipsRoute
   '/olympiads': typeof OlympiadsRoute
   '/shooting': typeof ShootingRoute
@@ -58,6 +72,8 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/committees': typeof CommitteesRoute
+  '/contact': typeof ContactRoute
+  '/documents': typeof DocumentsRoute
   '/internships': typeof InternshipsRoute
   '/olympiads': typeof OlympiadsRoute
   '/shooting': typeof ShootingRoute
@@ -67,6 +83,8 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/committees': typeof CommitteesRoute
+  '/contact': typeof ContactRoute
+  '/documents': typeof DocumentsRoute
   '/internships': typeof InternshipsRoute
   '/olympiads': typeof OlympiadsRoute
   '/shooting': typeof ShootingRoute
@@ -77,6 +95,8 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/committees'
+    | '/contact'
+    | '/documents'
     | '/internships'
     | '/olympiads'
     | '/shooting'
@@ -85,6 +105,8 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/committees'
+    | '/contact'
+    | '/documents'
     | '/internships'
     | '/olympiads'
     | '/shooting'
@@ -93,6 +115,8 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/committees'
+    | '/contact'
+    | '/documents'
     | '/internships'
     | '/olympiads'
     | '/shooting'
@@ -102,6 +126,8 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CommitteesRoute: typeof CommitteesRoute
+  ContactRoute: typeof ContactRoute
+  DocumentsRoute: typeof DocumentsRoute
   InternshipsRoute: typeof InternshipsRoute
   OlympiadsRoute: typeof OlympiadsRoute
   ShootingRoute: typeof ShootingRoute
@@ -122,6 +148,20 @@ declare module '@tanstack/react-router' {
       path: '/committees'
       fullPath: '/committees'
       preLoaderRoute: typeof CommitteesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/documents': {
+      id: '/documents'
+      path: '/documents'
+      fullPath: '/documents'
+      preLoaderRoute: typeof DocumentsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/internships': {
@@ -158,6 +198,8 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CommitteesRoute: CommitteesRoute,
+  ContactRoute: ContactRoute,
+  DocumentsRoute: DocumentsRoute,
   InternshipsRoute: InternshipsRoute,
   OlympiadsRoute: OlympiadsRoute,
   ShootingRoute: ShootingRoute,
