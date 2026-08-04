@@ -23,12 +23,13 @@ export type PortfolioItem = {
 };
 
 export const profile = {
-  name: "Your Name",
-  tagline: "Olympiad competitor, precision shooter, and writer.",
+  name: "Rubaika Zaidi",
+  age: 17,
+  tagline: "National Level Rifle Shooter, Tech enthusiast.",
   location: "City, Country",
   email: "you@example.com",
   intro:
-    "Replace this paragraph with your own introduction. Two or three sentences are enough: who you are, what you have spent the last few years working on, and what you intend to study. Admissions readers scan first and read second, so lead with the thing you are best at.",
+    "I'm Rubaika Zaidi, 17, a national level rifle shooter and tech enthusiast. This profile brings together my olympiad awards, shooting podiums, leadership roles, internships, published writing, and the certificates behind each one.",
   socials: [
     { label: "LinkedIn", href: "#" },
     { label: "Email", href: "mailto:you@example.com" },
@@ -37,9 +38,9 @@ export const profile = {
 };
 
 export const stats = [
-  { value: "12", label: "Olympiad & competition awards" },
-  { value: "5", label: "National shooting podiums" },
+  { value: "11", label: "Olympiad & competition awards" },
+  { value: "13", label: "National shooting podiums" },
   { value: "8", label: "Published pieces" },
-  { value: "4", label: "Committee roles" },
-  { value: "3", label: "Internships" },
+  { value: "6", label: "Committee roles" },
+  { value: "2", label: "Internships" },
 ];
