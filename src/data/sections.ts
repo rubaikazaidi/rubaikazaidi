@@ -1,4 +1,6 @@
 import type { PortfolioItem } from "./portfolio";
+import saaiCertificate from "@/assets/saai-certificate.pdf.asset.json";
+import saaiRecommendation from "@/assets/saai-recommendation.pdf.asset.json";
 
 export const olympiads: PortfolioItem[] = [
   {
@@ -117,16 +119,25 @@ export const committees: PortfolioItem[] = [
 
 export const internships: PortfolioItem[] = [
   {
-    id: "research-lab",
-    title: "Research Intern",
-    org: "University Laboratory",
-    period: "Jun 2025 — Aug 2025",
+    id: "saai-ai-research",
+    title: "AI Research & Innovation Program",
+    org: "School of Applied Artificial Intelligence (Codex Automation Key Pvt. Ltd.)",
+    period: "2026",
+    badge: "Research Batch — Certificate SAAI-R-2-AIRIP-07",
     description:
-      "Placeholder entry. What the lab worked on, what you were given to do, and what you produced.",
-    bullets: ["Placeholder task or method.", "Placeholder result or deliverable."],
+      "An intensive applied research program covering artificial intelligence fundamentals, research methodology, data analysis, model exploration, and AI-driven problem solving.",
+    bullets: [
+      "Completed the sprint challenge: an IPL sentiment analysis pipeline built with classical machine learning methods for text classification.",
+      "Compared multiple modelling approaches and evaluated results to understand how traditional NLP techniques solve real-world classification problems.",
+      "Competencies developed: NLP classification fundamentals, model evaluation practices, and building complete end-to-end ML workflows.",
+    ],
+    link: {
+      label: "Verify recommendation",
+      href: "https://saai.codexautomationkey.com/users/p/rubaika/",
+    },
     documents: [
-      { label: "Completion letter", type: "letter" },
-      { label: "Supervisor recommendation", type: "letter" },
+      { label: "Certificate of completion", type: "certificate", file: saaiCertificate.url },
+      { label: "Recommendation letter", type: "letter", file: saaiRecommendation.url },
     ],
   },
   {
