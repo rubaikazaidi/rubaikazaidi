@@ -1,6 +1,4 @@
 import type { PortfolioItem } from "./portfolio";
-import saaiCertificate from "@/assets/saai-certificate.pdf.asset.json";
-import saaiRecommendation from "@/assets/saai-recommendation.pdf.asset.json";
 
 export const olympiads: PortfolioItem[] = [
   {
