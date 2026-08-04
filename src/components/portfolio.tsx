@@ -27,10 +27,11 @@ export function DocumentSlot({ doc }: { doc: PortfolioDocument }) {
     return (
       <a
         href={doc.file}
+        download
         className="group flex items-center justify-between gap-4 rounded-sm border border-border bg-card px-4 py-3 transition-colors hover:border-accent"
       >
         <span className="font-sans text-sm text-foreground">{doc.label}</span>
-        <span className="font-sans text-xs uppercase tracking-[0.18em] text-accent">View</span>
+        <span className="font-sans text-xs uppercase tracking-[0.18em] text-accent">Download</span>
       </a>
     );
   }
