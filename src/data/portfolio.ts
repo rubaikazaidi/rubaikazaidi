@@ -38,9 +38,9 @@ export const profile = {
 };
 
 export const stats = [
-  { value: "12", label: "Olympiad & competition awards" },
-  { value: "5", label: "National shooting podiums" },
+  { value: "11", label: "Olympiad & competition awards" },
+  { value: "13", label: "National shooting podiums" },
   { value: "8", label: "Published pieces" },
-  { value: "4", label: "Committee roles" },
-  { value: "3", label: "Internships" },
+  { value: "6", label: "Committee roles" },
+  { value: "2", label: "Internships" },
 ];
