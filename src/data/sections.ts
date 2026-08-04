@@ -1,6 +1,4 @@
 import type { PortfolioItem } from "./portfolio";
-import saaiCertificate from "@/assets/saai-certificate.pdf.asset.json";
-import saaiRecommendation from "@/assets/saai-recommendation.pdf.asset.json";
 
 export const olympiads: PortfolioItem[] = [
   {
@@ -136,8 +134,16 @@ export const internships: PortfolioItem[] = [
       href: "https://saai.codexautomationkey.com/users/p/rubaika/",
     },
     documents: [
-      { label: "Certificate of completion", type: "certificate", file: saaiCertificate.url },
-      { label: "Recommendation letter", type: "letter", file: saaiRecommendation.url },
+      {
+        label: "Certificate of completion",
+        type: "certificate",
+        file: "/documents/saai-certificate.pdf",
+      },
+      {
+        label: "Recommendation letter",
+        type: "letter",
+        file: "/documents/saai-recommendation.pdf",
+      },
     ],
   },
   {
