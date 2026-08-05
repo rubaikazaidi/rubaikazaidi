@@ -2,37 +2,103 @@ import type { PortfolioItem } from "./portfolio";
 
 export const olympiads: PortfolioItem[] = [
   {
-    id: "imo",
-    title: "International Mathematical Olympiad",
-    org: "National Team",
-    period: "2025",
-    badge: "Silver Medal",
+    id: "imo-2023",
+    title: "SOF International Mathematics Olympiad — Grade 9",
+    org: "Science Olympiad Foundation",
+    period: "October — December 2023",
+    badge: "Gold Medal of Excellence · School Rank 1",
     description:
-      "Placeholder entry. Replace with the competition, the level you reached, and your result.",
-    documents: [{ label: "Medal certificate", type: "certificate" }],
-  },
-  {
-    id: "national-physics",
-    title: "National Physics Olympiad",
-    org: "Ministry of Education",
-    period: "2024",
-    badge: "1st Place, National Round",
-    description: "Placeholder entry. Describe the round, the field size, and the outcome.",
+      "International Rank 1920 · Regional Rank 1288 · Zonal Rank 669 · School Rank 1. Awarded the Gold Medal of Excellence for performance excellence at school level.",
     documents: [
-      { label: "First place certificate", type: "certificate" },
-      { label: "Selection letter", type: "letter" },
+      { label: "IMO 2023 certificate (Grade 9)", type: "certificate", file: "/documents/grade-9-imo.pdf" },
     ],
   },
   {
-    id: "informatics",
-    title: "Regional Informatics Olympiad",
-    org: "Regional Committee",
-    period: "2023",
-    badge: "Gold Medal",
-    description: "Placeholder entry.",
-    documents: [{ label: "Award certificate", type: "certificate" }],
+    id: "nco-2023",
+    title: "SOF National Cyber Olympiad — Grade 9",
+    org: "Science Olympiad Foundation",
+    period: "November — December 2023",
+    badge: "International Rank 271 · School Rank 1",
+    description:
+      "International Rank 271 · Regional Rank 139 · Zonal Rank 75 · School Rank 1 in the SOF National Cyber Olympiad.",
+    documents: [
+      { label: "NCO 2023 certificate (Grade 9)", type: "certificate", file: "/documents/grade-9-nco.pdf" },
+    ],
+  },
+  {
+    id: "nco-2022",
+    title: "SOF National Cyber Olympiad — Grade 8",
+    org: "Science Olympiad Foundation",
+    period: "November — December 2022",
+    badge: "International Rank 197 · School Rank 1",
+    description:
+      "International Rank 197 · Regional Rank 129 · Zonal Rank 80 · School Rank 1 in the SOF National Cyber Olympiad.",
+    documents: [
+      { label: "NCO 2022 certificate (Grade 8)", type: "certificate", file: "/documents/grade-8-nco.pdf" },
+    ],
+  },
+  {
+    id: "imo-2022",
+    title: "SOF International Mathematics Olympiad — Grade 8",
+    org: "Science Olympiad Foundation",
+    period: "November — December 2022",
+    badge: "School Rank 2",
+    description:
+      "International Rank 4181 · Regional Rank 2544 · Zonal Rank 1240 · School Rank 2 in the SOF International Mathematics Olympiad.",
+    documents: [
+      { label: "IMO 2022 certificate (Grade 8)", type: "certificate", file: "/documents/grade-8-imo.pdf" },
+    ],
+  },
+  {
+    id: "nco-2021",
+    title: "SOF National Cyber Olympiad — Grade 7",
+    org: "Science Olympiad Foundation",
+    period: "2021 — 2022",
+    badge: "International Rank 85 · School Rank 1",
+    description:
+      "International Rank 85 · Regional Rank 58 · Zonal Rank 42 · School Rank 1 — her strongest international placement in the Cyber Olympiad.",
+    documents: [
+      { label: "NCO 2021–22 certificate (Grade 7)", type: "certificate", file: "/documents/grade-7-nco.pdf" },
+    ],
+  },
+  {
+    id: "imo-2021",
+    title: "SOF International Mathematics Olympiad — Grade 7",
+    org: "Science Olympiad Foundation",
+    period: "2021 — 2022",
+    badge: "School Rank 2",
+    description:
+      "International Rank 1451 · Regional Rank 791 · Zonal Rank 489 · School Rank 2 in the SOF International Mathematics Olympiad.",
+    documents: [
+      { label: "IMO 2021–22 certificate (Grade 7)", type: "certificate", file: "/documents/grade-7-imo.pdf" },
+    ],
+  },
+  {
+    id: "imo-2020",
+    title: "SOF International Mathematics Olympiad — Grade 6",
+    org: "Science Olympiad Foundation",
+    period: "2020 — 2021",
+    badge: "Gold Medal of Excellence",
+    description:
+      "Awarded the Gold Medal of Excellence for performance excellence at school level in the SOF International Mathematics Olympiad.",
+    documents: [
+      { label: "IMO 2020–21 certificate (Grade 6)", type: "certificate", file: "/documents/grade-6-imo.pdf" },
+    ],
+  },
+  {
+    id: "imo-2017",
+    title: "SOF International Mathematics Olympiad — Grade 3",
+    org: "Science Olympiad Foundation",
+    period: "December 2017",
+    badge: "Certificate of Participation",
+    description:
+      "Her first olympiad — participation in the SOF International Mathematics Olympiad at Grade 3.",
+    documents: [
+      { label: "IMO 2017 certificate (Grade 3)", type: "certificate", file: "/documents/grade-3-imo.pdf" },
+    ],
   },
 ];
+
 
 export const shooting: PortfolioItem[] = [
   {
