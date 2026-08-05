@@ -223,9 +223,65 @@ export const internships: PortfolioItem[] = [
   },
 ];
 
+export const international: PortfolioItem[] = [
+  {
+    id: "icsc-2026",
+    title: "International Computer Science Competition (ICSC) 2026",
+    org: "ICSC · Qualification Round",
+    period: "July 2026",
+    badge: "Special Honour — all test cases passed",
+    description:
+      "Participated in the Qualification Round of the 2026 International Computer Science Competition, an extracurricular science competition for high school and university students. Received a special honour for submitting code that was successfully evaluated and passed all test cases. Verify-ID QR-2026-10375F928251.",
+    link: { label: "Verify certificate", href: "https://icscompetition.org/verify" },
+    documents: [
+      {
+        label: "ICSC 2026 participation certificate",
+        type: "certificate",
+        file: "/documents/icsc-2026.pdf",
+        image: "/documents/icsc-2026.jpg",
+      },
+    ],
+  },
+  {
+    id: "earth-prize-2026",
+    title: "The Earth Prize 2026",
+    org: "The Earth Foundation",
+    period: "2026",
+    badge: "Participant",
+    description:
+      "Recognised for participation in The Earth Prize 2026, a global sustainability competition for students, and for a commitment to creating impactful solutions for a more sustainable future.",
+    documents: [
+      {
+        label: "The Earth Prize 2026 participant certificate",
+        type: "certificate",
+        file: "/documents/earth-prize-2026.pdf",
+        image: "/documents/earth-prize-2026.jpg",
+      },
+    ],
+  },
+  {
+    id: "pirple-python-2021",
+    title: "Python Is Easy — Certification",
+    org: "Pirple.com",
+    period: "August 2021",
+    badge: "Course completed · ID x05chypair",
+    description:
+      "Completed the Python Is Easy course covering variables, functions, if-statements, lists, loops, dictionaries and sets, input/output, classes and inheritance, importing, the time and math libraries, and error handling.",
+    documents: [
+      {
+        label: "Pirple Python certification",
+        type: "certificate",
+        file: "/documents/pirple-python-2021.pdf",
+        image: "/documents/pirple-python-2021.jpg",
+      },
+    ],
+  },
+];
+
 export const sections = [
   { key: "olympiads", label: "Olympiads", href: "/olympiads", items: olympiads },
   { key: "shooting", label: "Shooting", href: "/shooting", items: shooting },
+  { key: "international", label: "International & Certifications", href: "/international", items: international },
   { key: "writing", label: "Writing", href: "/writing", items: writing },
   { key: "committees", label: "Leadership", href: "/committees", items: committees },
   { key: "internships", label: "Internships", href: "/internships", items: internships },
