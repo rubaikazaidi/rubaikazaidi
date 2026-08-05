@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as CommitteesRouteImport } from './routes/committees'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as DocumentsRouteImport } from './routes/documents'
+import { Route as InternationalRouteImport } from './routes/international'
 import { Route as InternshipsRouteImport } from './routes/internships'
 import { Route as OlympiadsRouteImport } from './routes/olympiads'
 import { Route as ShootingRouteImport } from './routes/shooting'
@@ -36,6 +37,11 @@ const ContactRoute = ContactRouteImport.update({
 const DocumentsRoute = DocumentsRouteImport.update({
   id: '/documents',
   path: '/documents',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InternationalRoute = InternationalRouteImport.update({
+  id: '/international',
+  path: '/international',
   getParentRoute: () => rootRouteImport,
 } as any)
 const InternshipsRoute = InternshipsRouteImport.update({
@@ -64,6 +70,7 @@ export interface FileRoutesByFullPath {
   '/committees': typeof CommitteesRoute
   '/contact': typeof ContactRoute
   '/documents': typeof DocumentsRoute
+  '/international': typeof InternationalRoute
   '/internships': typeof InternshipsRoute
   '/olympiads': typeof OlympiadsRoute
   '/shooting': typeof ShootingRoute
@@ -74,6 +81,7 @@ export interface FileRoutesByTo {
   '/committees': typeof CommitteesRoute
   '/contact': typeof ContactRoute
   '/documents': typeof DocumentsRoute
+  '/international': typeof InternationalRoute
   '/internships': typeof InternshipsRoute
   '/olympiads': typeof OlympiadsRoute
   '/shooting': typeof ShootingRoute
@@ -85,6 +93,7 @@ export interface FileRoutesById {
   '/committees': typeof CommitteesRoute
   '/contact': typeof ContactRoute
   '/documents': typeof DocumentsRoute
+  '/international': typeof InternationalRoute
   '/internships': typeof InternshipsRoute
   '/olympiads': typeof OlympiadsRoute
   '/shooting': typeof ShootingRoute
@@ -97,6 +106,7 @@ export interface FileRouteTypes {
     | '/committees'
     | '/contact'
     | '/documents'
+    | '/international'
     | '/internships'
     | '/olympiads'
     | '/shooting'
@@ -107,6 +117,7 @@ export interface FileRouteTypes {
     | '/committees'
     | '/contact'
     | '/documents'
+    | '/international'
     | '/internships'
     | '/olympiads'
     | '/shooting'
@@ -117,6 +128,7 @@ export interface FileRouteTypes {
     | '/committees'
     | '/contact'
     | '/documents'
+    | '/international'
     | '/internships'
     | '/olympiads'
     | '/shooting'
@@ -128,6 +140,7 @@ export interface RootRouteChildren {
   CommitteesRoute: typeof CommitteesRoute
   ContactRoute: typeof ContactRoute
   DocumentsRoute: typeof DocumentsRoute
+  InternationalRoute: typeof InternationalRoute
   InternshipsRoute: typeof InternshipsRoute
   OlympiadsRoute: typeof OlympiadsRoute
   ShootingRoute: typeof ShootingRoute
@@ -162,6 +175,13 @@ declare module '@tanstack/react-router' {
       path: '/documents'
       fullPath: '/documents'
       preLoaderRoute: typeof DocumentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/international': {
+      id: '/international'
+      path: '/international'
+      fullPath: '/international'
+      preLoaderRoute: typeof InternationalRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/internships': {
@@ -200,6 +220,7 @@ const rootRouteChildren: RootRouteChildren = {
   CommitteesRoute: CommitteesRoute,
   ContactRoute: ContactRoute,
   DocumentsRoute: DocumentsRoute,
+  InternationalRoute: InternationalRoute,
   InternshipsRoute: InternshipsRoute,
   OlympiadsRoute: OlympiadsRoute,
   ShootingRoute: ShootingRoute,
