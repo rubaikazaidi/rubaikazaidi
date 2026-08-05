@@ -23,16 +23,32 @@ export function PageHeader({
 }
 
 export function DocumentSlot({ doc }: { doc: PortfolioDocument }) {
-  if (doc.file) {
+  if (doc.file || doc.image) {
     return (
-      <a
-        href={doc.file}
-        download
-        className="group flex items-center justify-between gap-4 rounded-sm border border-border bg-card px-4 py-3 transition-colors hover:border-accent"
-      >
-        <span className="font-sans text-sm text-foreground">{doc.label}</span>
-        <span className="font-sans text-xs uppercase tracking-[0.18em] text-accent">Download</span>
-      </a>
+      <div className="rounded-sm border border-border bg-card px-4 py-3">
+        <p className="font-sans text-sm text-foreground">{doc.label}</p>
+        <div className="mt-2 flex flex-wrap gap-4">
+          {doc.image ? (
+            <a
+              href={doc.image}
+              target="_blank"
+              rel="noreferrer"
+              className="border-b border-accent/50 font-sans text-xs uppercase tracking-[0.18em] text-accent transition-colors hover:border-accent"
+            >
+              View
+            </a>
+          ) : null}
+          {doc.file ? (
+            <a
+              href={doc.file}
+              download
+              className="border-b border-accent/40 font-sans text-xs uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-accent hover:text-accent"
+            >
+              Download PDF
+            </a>
+          ) : null}
+        </div>
+      </div>
     );
   }
 
@@ -45,6 +61,7 @@ export function DocumentSlot({ doc }: { doc: PortfolioDocument }) {
     </div>
   );
 }
+
 
 export function EntryCard({ item }: { item: PortfolioItem }) {
   return (

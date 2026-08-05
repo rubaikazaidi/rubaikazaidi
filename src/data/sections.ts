@@ -10,7 +10,7 @@ export const olympiads: PortfolioItem[] = [
     description:
       "International Rank 1920 · Regional Rank 1288 · Zonal Rank 669 · School Rank 1. Awarded the Gold Medal of Excellence for performance excellence at school level.",
     documents: [
-      { label: "IMO 2023 certificate (Grade 9)", type: "certificate", file: "/documents/grade-9-imo.pdf" },
+      { label: "IMO 2023 certificate (Grade 9)", type: "certificate", file: "/documents/grade-9-imo.pdf", image: "/documents/grade-9-imo.jpg" },
     ],
   },
   {
@@ -22,7 +22,7 @@ export const olympiads: PortfolioItem[] = [
     description:
       "International Rank 271 · Regional Rank 139 · Zonal Rank 75 · School Rank 1 in the SOF National Cyber Olympiad.",
     documents: [
-      { label: "NCO 2023 certificate (Grade 9)", type: "certificate", file: "/documents/grade-9-nco.pdf" },
+      { label: "NCO 2023 certificate (Grade 9)", type: "certificate", file: "/documents/grade-9-nco.pdf", image: "/documents/grade-9-nco.jpg" },
     ],
   },
   {
@@ -34,7 +34,7 @@ export const olympiads: PortfolioItem[] = [
     description:
       "International Rank 197 · Regional Rank 129 · Zonal Rank 80 · School Rank 1 in the SOF National Cyber Olympiad.",
     documents: [
-      { label: "NCO 2022 certificate (Grade 8)", type: "certificate", file: "/documents/grade-8-nco.pdf" },
+      { label: "NCO 2022 certificate (Grade 8)", type: "certificate", file: "/documents/grade-8-nco.pdf", image: "/documents/grade-8-nco.jpg" },
     ],
   },
   {
@@ -46,7 +46,7 @@ export const olympiads: PortfolioItem[] = [
     description:
       "International Rank 4181 · Regional Rank 2544 · Zonal Rank 1240 · School Rank 2 in the SOF International Mathematics Olympiad.",
     documents: [
-      { label: "IMO 2022 certificate (Grade 8)", type: "certificate", file: "/documents/grade-8-imo.pdf" },
+      { label: "IMO 2022 certificate (Grade 8)", type: "certificate", file: "/documents/grade-8-imo.pdf", image: "/documents/grade-8-imo.jpg" },
     ],
   },
   {
@@ -58,7 +58,7 @@ export const olympiads: PortfolioItem[] = [
     description:
       "International Rank 85 · Regional Rank 58 · Zonal Rank 42 · School Rank 1 — her strongest international placement in the Cyber Olympiad.",
     documents: [
-      { label: "NCO 2021–22 certificate (Grade 7)", type: "certificate", file: "/documents/grade-7-nco.pdf" },
+      { label: "NCO 2021–22 certificate (Grade 7)", type: "certificate", file: "/documents/grade-7-nco.pdf", image: "/documents/grade-7-nco.jpg" },
     ],
   },
   {
@@ -70,7 +70,7 @@ export const olympiads: PortfolioItem[] = [
     description:
       "International Rank 1451 · Regional Rank 791 · Zonal Rank 489 · School Rank 2 in the SOF International Mathematics Olympiad.",
     documents: [
-      { label: "IMO 2021–22 certificate (Grade 7)", type: "certificate", file: "/documents/grade-7-imo.pdf" },
+      { label: "IMO 2021–22 certificate (Grade 7)", type: "certificate", file: "/documents/grade-7-imo.pdf", image: "/documents/grade-7-imo.jpg" },
     ],
   },
   {
@@ -82,7 +82,7 @@ export const olympiads: PortfolioItem[] = [
     description:
       "Awarded the Gold Medal of Excellence for performance excellence at school level in the SOF International Mathematics Olympiad.",
     documents: [
-      { label: "IMO 2020–21 certificate (Grade 6)", type: "certificate", file: "/documents/grade-6-imo.pdf" },
+      { label: "IMO 2020–21 certificate (Grade 6)", type: "certificate", file: "/documents/grade-6-imo.pdf", image: "/documents/grade-6-imo.jpg" },
     ],
   },
   {
@@ -94,7 +94,7 @@ export const olympiads: PortfolioItem[] = [
     description:
       "Her first olympiad — participation in the SOF International Mathematics Olympiad at Grade 3.",
     documents: [
-      { label: "IMO 2017 certificate (Grade 3)", type: "certificate", file: "/documents/grade-3-imo.pdf" },
+      { label: "IMO 2017 certificate (Grade 3)", type: "certificate", file: "/documents/grade-3-imo.pdf", image: "/documents/grade-3-imo.jpg" },
     ],
   },
 ];
@@ -204,6 +204,7 @@ export const internships: PortfolioItem[] = [
         label: "Certificate of completion",
         type: "certificate",
         file: "/documents/saai-certificate.pdf",
+        image: "/documents/saai-certificate.jpg",
       },
       {
         label: "Recommendation letter",
