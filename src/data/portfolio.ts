@@ -3,6 +3,9 @@ export type PortfolioDocument = {
   label: string;
   /** Put the file in public/documents/ and reference it here, e.g. "/documents/imo-2025.pdf" */
   file?: string | undefined;
+  /** Optional image preview of the same document, e.g. "/documents/imo-2025.jpg" */
+  image?: string | undefined;
+
 
   type?: "certificate" | "letter" | "publication" | "photo" | "other";
 };
