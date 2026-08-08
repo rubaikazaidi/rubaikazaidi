@@ -114,6 +114,7 @@ export const shooting: PortfolioItem[] = [
       "2024 — 2nd place",
       "2023 — 2nd place",
     ],
+    instagram: "https://www.instagram.com/p/DZ4qUAaNkqD/",
     documents: [
       { label: "DSO 2025 certificate", type: "certificate" },
       { label: "DSO 2024 certificate", type: "certificate" },
