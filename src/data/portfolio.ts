@@ -23,6 +23,8 @@ export type PortfolioItem = {
   bullets?: string[];
   link?: { label: string; href: string };
   documents?: PortfolioDocument[];
+  /** Optional Instagram post URL to embed next to this entry */
+  instagram?: string;
 };
 
 export const profile = {

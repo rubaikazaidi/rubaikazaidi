@@ -64,9 +64,16 @@ export function DocumentSlot({ doc }: { doc: PortfolioDocument }) {
 
 
 export function EntryCard({ item }: { item: PortfolioItem }) {
+  const hasInstagram = Boolean(item.instagram);
   return (
     <article className="border-t border-border py-10 first:border-t-0 first:pt-0">
-      <div className="grid gap-8 md:grid-cols-[1fr_18rem]">
+      <div
+        className={`grid gap-8 ${
+          hasInstagram
+            ? "md:grid-cols-[1fr_22rem]"
+            : "md:grid-cols-[1fr_18rem]"
+        }`}
+      >
         <div>
           <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
             <h2 className="font-serif text-2xl text-foreground">{item.title}</h2>
@@ -114,6 +121,11 @@ export function EntryCard({ item }: { item: PortfolioItem }) {
               <DocumentSlot key={doc.label} doc={doc} />
             ))}
           </div>
+          {hasInstagram && item.instagram ? (
+            <div className="mt-4">
+              <InstagramEmbed url={item.instagram} />
+            </div>
+          ) : null}
         </div>
       </div>
     </article>
