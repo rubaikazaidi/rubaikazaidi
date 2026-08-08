@@ -102,34 +102,65 @@ export const olympiads: PortfolioItem[] = [
 
 export const shooting: PortfolioItem[] = [
   {
-    id: "nationals-2025",
-    title: "National Championship — 10m Air Rifle",
-    org: "National Shooting Federation",
-    period: "2025",
-    badge: "Finalist — 4th",
-    description: "Placeholder entry. Add discipline, qualification score, and final ranking.",
+    id: "dso-school-games",
+    title: "District School Games",
+    org: "District Sports Office (DSO) · Under-17",
+    period: "2023 — 2025",
+    badge: "3 Podiums",
+    description:
+      "Rifle shooting podiums at the DSO District School Games under-17 category across three years.",
+    bullets: [
+      "2025 — 3rd place in Peep Sight",
+      "2024 — 2nd place",
+      "2023 — 2nd place",
+    ],
     documents: [
-      { label: "Result sheet", type: "certificate" },
-      { label: "Competition photo", type: "photo" },
+      { label: "DSO 2025 certificate", type: "certificate" },
+      { label: "DSO 2024 certificate", type: "certificate" },
+      { label: "DSO 2023 certificate", type: "certificate" },
     ],
   },
   {
-    id: "state-2024",
-    title: "State Championship — 50m Rifle 3 Positions",
-    org: "State Rifle Association",
-    period: "2024",
-    badge: "Silver",
-    description: "Placeholder entry.",
-    documents: [{ label: "Silver medal certificate", type: "certificate" }],
+    id: "capt-ezekiel",
+    title: "Capt Ezekiel Championships",
+    org: "Capt Ezekiel Memorial Shooting Championship",
+    period: "10m air rifle · 50m rifle 3 positions",
+    badge: "8 Podiums",
+    description:
+      "Multiple podium finishes across Sub-Youth, Youth, Junior and Senior women categories in 10m air rifle and 50m rifle 3 positions.",
+    bullets: [
+      "1st (50m) — 50m Youth Women",
+      "1st (50m) — 50m Junior Women 3P",
+      "2nd (10m) — 10m Sub-Youth Women",
+      "2nd (10m) — 10m Youth Women",
+      "2nd (50m) — 50m Youth Women 3P",
+      "2nd (50m) — 50m Junior Women 3P",
+      "2nd (50m) — 50m Seniors Women 3P",
+      "3rd (10m) — 10m Junior Women",
+    ],
+    documents: [
+      { label: "Capt Ezekiel result sheet", type: "certificate" },
+    ],
   },
   {
-    id: "club-2023",
-    title: "Club Ranking Series",
-    org: "Home Range",
-    period: "2022 — 2023",
-    badge: "Ranked 2nd overall",
-    description: "Placeholder entry. Training volume, coach, and personal bests fit well here.",
-    documents: [{ label: "Season summary", type: "other" }],
+    id: "sfa-tournament",
+    title: "SFA Tournament",
+    org: "Sports for All",
+    period: "U-19",
+    badge: "2nd place",
+    description:
+      "Silver medal finish in the U-19 category at the SFA Tournament.",
+    documents: [{ label: "SFA certificate", type: "certificate" }],
+  },
+  {
+    id: "maharashtra-air-gun",
+    title: "Maharashtra Air Gun Championship",
+    org: "Maharashtra State Rifle Association",
+    period: "10m Air Rifle",
+    badge: "1st place",
+    description:
+      "Gold medal in the 10m Sub-Youth Women category at the Maharashtra Air Gun Championship.",
+    documents: [{ label: "Maharashtra Air Gun certificate", type: "certificate" }],
   },
 ];
 
