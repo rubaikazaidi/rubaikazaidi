@@ -32,7 +32,7 @@ function loadInstagramScript(): Promise<void> {
     const script = document.createElement("script");
     script.src = "https://www.instagram.com/embed.js";
     script.async = true;
-    script.dataset.instgrmScript = "true";
+    script.dataset["instgrmScript"] = "true";
     script.addEventListener("load", () => resolve());
     script.addEventListener("error", () =>
       reject(new Error("Instagram embed script failed to load"))
