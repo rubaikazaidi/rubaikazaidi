@@ -52,7 +52,7 @@ function ContactPage() {
               <a
                 href={profile.linkedin}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="border-b border-accent/40 font-sans text-sm text-foreground transition-colors hover:text-accent"
               >
                 LinkedIn · /in/rubaika-zaidi-b229983b6
@@ -64,6 +64,8 @@ function ContactPage() {
                 <li key={s.label}>
                   <a
                     href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="border-b border-accent/40 font-sans text-sm text-foreground transition-colors hover:text-accent"
                   >
                     {s.label}

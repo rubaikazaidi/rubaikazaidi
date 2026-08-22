@@ -33,7 +33,7 @@ export function DocumentSlot({ doc }: { doc: PortfolioDocument }) {
             <a
               href={doc.image}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="border-b border-accent/50 font-sans text-xs uppercase tracking-[0.18em] text-accent transition-colors hover:border-accent"
             >
               View
@@ -42,6 +42,8 @@ export function DocumentSlot({ doc }: { doc: PortfolioDocument }) {
           {doc.file ? (
             <a
               href={doc.file}
+              target="_blank"
+              rel="noopener noreferrer"
               download
               className="border-b border-accent/40 font-sans text-xs uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-accent hover:text-accent"
             >
@@ -103,6 +105,8 @@ export function EntryCard({ item }: { item: PortfolioItem }) {
           {item.link ? (
             <a
               href={item.link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-5 inline-block border-b border-accent/50 font-sans text-sm text-accent transition-colors hover:border-accent"
             >
               {item.link.label}
