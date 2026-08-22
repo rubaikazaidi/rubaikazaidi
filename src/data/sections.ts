@@ -152,6 +152,7 @@ export const shooting: PortfolioItem[] = [
     description:
       "Silver medal finish in the U-19 category at the SFA Tournament.",
     documents: [{ label: "SFA certificate", type: "certificate" }],
+    instagram: "https://www.instagram.com/p/DDyblAat2Gg/",
   },
   {
     id: "maharashtra-air-gun",
