@@ -114,7 +114,6 @@ export const shooting: PortfolioItem[] = [
       "2024 — 2nd place",
       "2023 — 2nd place",
     ],
-    instagram: "https://www.instagram.com/p/DZ4qUAaNkqD/",
     documents: [
       { label: "DSO 2025 certificate", type: "certificate" },
       { label: "DSO 2024 certificate", type: "certificate" },
@@ -139,6 +138,7 @@ export const shooting: PortfolioItem[] = [
       "2nd (50m) — 50m Seniors Women 3P",
       "3rd (10m) — 10m Junior Women",
     ],
+    instagram: "https://www.instagram.com/p/DZ4qUAaNkqD/",
     documents: [
       { label: "Capt Ezekiel result sheet", type: "certificate" },
     ],
