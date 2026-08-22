@@ -31,13 +31,15 @@ export const profile = {
   name: "Rubaika Zaidi",
   age: 17,
   tagline: "National Level Rifle Shooter, Tech enthusiast.",
-  location: "City, Country",
-  email: "you@example.com",
+  location: "Navi Mumbai, Maharashtra",
+  email: "rubaika.zaidi@outlook.com",
+  phone: "+91 93725 93707",
+  linkedin: "https://www.linkedin.com/in/rubaika-zaidi-b229983b6",
   intro:
     "I'm Rubaika Zaidi, 17, a national level rifle shooter and tech enthusiast. This profile brings together my olympiad awards, shooting podiums, leadership roles, internships, published writing, and the certificates behind each one.",
   socials: [
-    { label: "LinkedIn", href: "#" },
-    { label: "Email", href: "mailto:you@example.com" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/rubaika-zaidi-b229983b6" },
+    { label: "Email", href: "mailto:rubaika.zaidi@outlook.com" },
   ],
   cv: { label: "Curriculum Vitae (PDF)", file: undefined as string | undefined },
 };
