@@ -40,18 +40,36 @@ function ContactPage() {
           >
             {profile.email}
           </a>
+          <a
+            href={`tel:${profile.phone.replace(/\s/g, "")}`}
+            className="mt-2 block font-serif text-2xl text-foreground transition-colors hover:text-accent"
+          >
+            {profile.phone}
+          </a>
           <p className="mt-3 font-sans text-sm text-muted-foreground">{profile.location}</p>
           <ul className="mt-6 space-y-2">
-            {profile.socials.map((s) => (
-              <li key={s.label}>
-                <a
-                  href={s.href}
-                  className="border-b border-accent/40 font-sans text-sm text-foreground transition-colors hover:text-accent"
-                >
-                  {s.label}
-                </a>
-              </li>
-            ))}
+            <li>
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="border-b border-accent/40 font-sans text-sm text-foreground transition-colors hover:text-accent"
+              >
+                LinkedIn · /in/rubaika-zaidi-b229983b6
+              </a>
+            </li>
+            {profile.socials
+              .filter((s) => s.label !== "LinkedIn")
+              .map((s) => (
+                <li key={s.label}>
+                  <a
+                    href={s.href}
+                    className="border-b border-accent/40 font-sans text-sm text-foreground transition-colors hover:text-accent"
+                  >
+                    {s.label}
+                  </a>
+                </li>
+              ))}
           </ul>
         </div>
 
