@@ -1,4 +1,4 @@
-import type { PortfolioDocument, PortfolioItem } from "@/data/portfolio";
+import type { PortfolioAnecdote, PortfolioDocument, PortfolioItem } from "@/data/portfolio";
 import { InstagramEmbed } from "@/components/instagram-embed";
 
 export function PageHeader({
