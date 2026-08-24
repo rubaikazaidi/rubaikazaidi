@@ -23,6 +23,19 @@ export function PageHeader({
   );
 }
 
+export function AnecdoteBlock({ anecdote }: { anecdote: PortfolioAnecdote }) {
+  return (
+    <aside className="mt-8 border-l-2 border-accent/40 pl-5">
+      <p className="font-sans text-xs uppercase tracking-[0.22em] text-accent/80">
+        {anecdote.title ? anecdote.title : "Anecdote"}
+      </p>
+      <p className="mt-2 max-w-2xl font-serif text-lg italic leading-relaxed text-foreground/80">
+        {anecdote.body}
+      </p>
+    </aside>
+  );
+}
+
 export function DocumentSlot({ doc }: { doc: PortfolioDocument }) {
   if (doc.file || doc.image) {
     return (
