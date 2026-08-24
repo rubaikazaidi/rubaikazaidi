@@ -108,6 +108,9 @@ export function EntryCard({ item }: { item: PortfolioItem }) {
               {item.link.label}
             </a>
           ) : null}
+          {item.anecdote ? (
+            <AnecdoteBlock anecdote={item.anecdote} />
+          ) : null}
         </div>
 
         <div>
