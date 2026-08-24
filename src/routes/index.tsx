@@ -22,63 +22,88 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+const pad = (value: string) => (/^\d$/.test(value) ? `0${value}` : value);
+
 function Index() {
   return (
-    <>
-      <section className="border-b border-border pb-14">
-        <p className="font-sans text-xs uppercase tracking-[0.28em] text-accent">
-          College Application Profile
-        </p>
-        <h1 className="mt-5 font-serif text-5xl leading-[1.05] text-foreground sm:text-6xl">
-          {profile.name}
-        </h1>
-        <p className="mt-4 max-w-xl font-serif text-xl italic text-muted-foreground">
-          {profile.tagline}
-        </p>
-        <div className="mt-10 grid gap-10 md:grid-cols-[1fr_16rem]">
-          <p className="max-w-2xl text-lg leading-relaxed text-foreground/85">{profile.intro}</p>
-          <div>
-            <div className="flex aspect-[4/5] items-center justify-center border border-dashed border-border">
-              <span className="px-6 text-center font-sans text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                Portrait — to be added
-              </span>
+    <div className="border-y border-primary py-12">
+      <section className="mb-16 grid grid-cols-1 gap-8 md:grid-cols-12">
+        <div className="md:col-span-8">
+          <p className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.28em] text-primary">
+            College Application Profile
+          </p>
+          <h1 className="mb-6 font-serif text-6xl leading-none text-primary sm:text-7xl md:text-8xl">
+            {profile.name}
+          </h1>
+          <p className="border-l-4 border-gold pl-6 font-sans text-xl font-light italic tracking-wide text-foreground sm:text-2xl">
+            {profile.tagline}
+          </p>
+          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-foreground/80">
+            {profile.intro}
+          </p>
+        </div>
+        <div className="flex flex-col justify-end md:col-span-4">
+          <div className="relative aspect-[4/5] w-full overflow-hidden border border-gold bg-primary/5">
+            <div className="absolute inset-0 flex items-center justify-center font-serif italic text-primary/25">
+              Portrait
             </div>
           </div>
         </div>
       </section>
 
-      <section className="border-b border-border py-12">
-        <dl className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
-          {stats.map((s) => (
-            <div key={s.label}>
-              <dt className="font-serif text-4xl text-accent">{s.value}</dt>
-              <dd className="mt-2 font-sans text-xs uppercase leading-relaxed tracking-[0.14em] text-muted-foreground">
-                {s.label}
-              </dd>
-            </div>
-          ))}
-        </dl>
+      <section className="mb-16 grid grid-cols-2 gap-4 border-y border-gold/40 py-8 md:grid-cols-5">
+        {stats.map((s, i) => (
+          <div
+            key={s.label}
+            className={`text-center ${i === 0 ? "" : "md:border-l md:border-gold/40"}`}
+          >
+            <span className="block font-serif text-4xl text-primary">{pad(String(s.value))}</span>
+            <span className="mt-1 block font-sans text-[10px] uppercase tracking-[0.2em] text-foreground/60">
+              {s.label}
+            </span>
+          </div>
+        ))}
       </section>
 
-      <section className="py-14">
-        <h2 className="font-serif text-3xl text-foreground">Dossier</h2>
-        <div className="mt-8 divide-y divide-border border-y border-border">
-          {sections.map((section) => (
-            <Link
-              key={section.key}
-              to={section.href}
-              className="group flex items-baseline justify-between gap-6 py-6 transition-colors hover:bg-card"
-            >
-              <span className="font-serif text-2xl text-foreground group-hover:text-accent">
-                {section.label}
-              </span>
-              <span className="font-sans text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                {section.items.length} entries
-              </span>
-            </Link>
-          ))}
-        </div>
+      <section className="grid grid-cols-1 gap-px border border-gold/40 bg-gold/40 md:grid-cols-4">
+        {sections.map((section) => (
+          <Link
+            key={section.key}
+            to={section.href}
+            className="group bg-background p-8 transition-colors duration-300 hover:bg-primary"
+          >
+            <span className="block font-serif text-2xl text-foreground group-hover:text-primary-foreground">
+              {section.label}
+            </span>
+            <span className="mt-2 block font-sans text-xs uppercase tracking-wide text-gold">
+              {section.blurb}
+            </span>
+            <span className="mt-4 block font-sans text-[10px] uppercase tracking-[0.2em] text-muted-foreground group-hover:text-primary-foreground/70">
+              {section.items.length} entries
+            </span>
+          </Link>
+        ))}
+        <Link
+          to="/documents"
+          className="group bg-background p-8 transition-colors duration-300 hover:bg-primary"
+        >
+          <span className="block font-serif text-2xl text-foreground group-hover:text-primary-foreground">
+            Documents
+          </span>
+          <span className="mt-2 block font-sans text-xs uppercase tracking-wide text-gold">
+            Portfolio Assets
+          </span>
+        </Link>
+        <Link
+          to="/contact"
+          className="group bg-primary p-8 transition-colors duration-300 hover:bg-ink"
+        >
+          <span className="block font-serif text-2xl text-primary-foreground">Contact</span>
+          <span className="mt-2 block font-sans text-xs uppercase tracking-wide text-gold">
+            Connect &amp; Inquire
+          </span>
+        </Link>
       </section>
-    </>
+    </div>
   );
 }
