@@ -114,6 +114,11 @@ export const shooting: PortfolioItem[] = [
       "2024 — 2nd place",
       "2023 — 2nd place",
     ],
+    anecdote: {
+      title: "Memo",
+      body:
+        "Write your anecdote here — the atmosphere on the range, a moment that stood out, how the relay unfolded, or what this streak of podiums meant to you.",
+    },
     documents: [
       { label: "DSO 2025 certificate", type: "certificate" },
       { label: "DSO 2024 certificate", type: "certificate" },
@@ -138,6 +143,11 @@ export const shooting: PortfolioItem[] = [
       "2nd (50m) — 50m Seniors Women 3P",
       "3rd (10m) — 10m Junior Women",
     ],
+    anecdote: {
+      title: "Memo",
+      body:
+        "Write your anecdote here — the shift between the 10m and 50m ranges, a key shot, the relay that decided a gold, or how it felt to podium across four age categories.",
+    },
     instagram: "https://www.instagram.com/p/DZ4qUAaNkqD/",
     documents: [
       { label: "Capt Ezekiel result sheet", type: "certificate" },
@@ -151,6 +161,11 @@ export const shooting: PortfolioItem[] = [
     badge: "2nd place",
     description:
       "Silver medal finish in the U-19 category at the SFA Tournament.",
+    anecdote: {
+      title: "Memo",
+      body:
+        "Write your anecdote here — the final, who you were up against, the shot sequence that sealed silver, and what you carried away from the match.",
+    },
     documents: [{ label: "SFA certificate", type: "certificate" }],
     instagram: "https://www.instagram.com/p/DDyblAat2Gg/",
   },
@@ -162,6 +177,11 @@ export const shooting: PortfolioItem[] = [
     badge: "1st place",
     description:
       "Gold medal in the 10m Sub-Youth Women category at the Maharashtra Air Gun Championship.",
+    anecdote: {
+      title: "Memo",
+      body:
+        "Write your anecdote here — your first state gold, the build-up to the final, the shot that put you ahead, and what the title meant going forward.",
+    },
     documents: [{ label: "Maharashtra Air Gun certificate", type: "certificate" }],
   },
 ];

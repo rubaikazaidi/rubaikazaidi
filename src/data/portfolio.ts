@@ -10,6 +10,13 @@ export type PortfolioDocument = {
   type?: "certificate" | "letter" | "publication" | "photo" | "other";
 };
 
+export type PortfolioAnecdote = {
+  /** Short title for the note, e.g. "On the final relay" */
+  title?: string;
+  /** The anecdote itself — a paragraph or two of personal recollection */
+  body: string;
+};
+
 export type PortfolioItem = {
   id: string;
   title: string;
@@ -25,6 +32,8 @@ export type PortfolioItem = {
   documents?: PortfolioDocument[];
   /** Optional Instagram post URL to embed next to this entry */
   instagram?: string;
+  /** Optional personal anecdote / memo shown as a pull-aside under the entry */
+  anecdote?: PortfolioAnecdote;
 };
 
 export const profile = {

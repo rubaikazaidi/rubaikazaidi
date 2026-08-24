@@ -1,4 +1,4 @@
-import type { PortfolioDocument, PortfolioItem } from "@/data/portfolio";
+import type { PortfolioAnecdote, PortfolioDocument, PortfolioItem } from "@/data/portfolio";
 import { InstagramEmbed } from "@/components/instagram-embed";
 
 export function PageHeader({
@@ -20,6 +20,19 @@ export function PageHeader({
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">{intro}</p>
       ) : null}
     </header>
+  );
+}
+
+export function AnecdoteBlock({ anecdote }: { anecdote: PortfolioAnecdote }) {
+  return (
+    <aside className="mt-8 border-l-2 border-accent/40 pl-5">
+      <p className="font-sans text-xs uppercase tracking-[0.22em] text-accent/80">
+        {anecdote.title ? anecdote.title : "Anecdote"}
+      </p>
+      <p className="mt-2 max-w-2xl font-serif text-lg italic leading-relaxed text-foreground/80">
+        {anecdote.body}
+      </p>
+    </aside>
   );
 }
 
@@ -107,6 +120,9 @@ export function EntryCard({ item }: { item: PortfolioItem }) {
             >
               {item.link.label}
             </a>
+          ) : null}
+          {item.anecdote ? (
+            <AnecdoteBlock anecdote={item.anecdote} />
           ) : null}
         </div>
 
