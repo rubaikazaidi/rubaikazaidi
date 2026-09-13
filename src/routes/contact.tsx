@@ -26,7 +26,7 @@ function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Get in touch"
-        intro="For admissions offices, competition organisers and editors."
+        intro="For recruiters, competition organisers and editors."
       />
 
       <div className="mt-12 grid gap-12 md:grid-cols-2">

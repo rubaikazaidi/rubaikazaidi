@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "College application profile: olympiad awards, competitive shooting record, published writing, leadership roles, internships and supporting certificates.",
+          "Olympiad awards, competitive shooting record, published writing, leadership roles, internships and supporting certificates.",
       },
       { property: "og:title", content: `${profile.name} — Academic & Competitive Profile` },
       {
@@ -30,7 +30,7 @@ function Index() {
       <section className="mb-16 grid grid-cols-1 gap-8 md:grid-cols-12">
         <div className="md:col-span-8">
           <p className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.28em] text-primary">
-            College Application Profile
+            Academic & Competitive Profile
           </p>
           <h1 className="mb-6 font-serif text-6xl leading-none text-primary sm:text-7xl md:text-8xl">
             {profile.name}
