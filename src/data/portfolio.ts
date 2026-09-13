@@ -32,6 +32,8 @@ export type PortfolioItem = {
   documents?: PortfolioDocument[];
   /** Optional Instagram post URL to embed next to this entry */
   instagram?: string;
+  /** Optional lead image used by visual tile layouts */
+  tileImage?: string;
   /** Optional personal anecdote / memo shown as a pull-aside under the entry */
   anecdote?: PortfolioAnecdote;
 };
@@ -55,7 +57,7 @@ export const profile = {
 
 export const stats = [
   { value: "11", label: "Olympiad & competition awards" },
-  { value: "13", label: "National shooting podiums" },
+  { value: "17", label: "Shooting podiums" },
   { value: "8", label: "Published pieces" },
   { value: "6", label: "Committee roles" },
   { value: "2", label: "Internships" },

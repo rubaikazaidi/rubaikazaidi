@@ -102,28 +102,39 @@ export const olympiads: PortfolioItem[] = [
 
 export const shooting: PortfolioItem[] = [
   {
-    id: "dso-school-games",
-    title: "District School Games",
-    org: "District Sports Office (DSO) · Under-17",
-    period: "2023 — 2025",
-    badge: "3 Podiums",
+    id: "west-zone-13",
+    title: "13th West Zone Shooting Championship",
+    org: "50m Rifle · Women",
+    period: "2026",
+    badge: "4 Podiums",
     description:
-      "Rifle shooting podiums at the DSO District School Games under-17 category across three years.",
+      "Four podium finishes across the Youth, Junior and Senior Women categories in 50m rifle events.",
     bullets: [
-      "2025 — 3rd place in Peep Sight",
-      "2024 — 2nd place",
-      "2023 — 2nd place",
+      "1st place — 50m Youth Women 3P",
+      "1st place — 50m Junior Women 3P",
+      "2nd place — 50m Senior Women 3P",
+      "3rd place — 50m Youth Women Prone",
     ],
     anecdote: {
       title: "Memo",
       body:
-        "Write your anecdote here — the atmosphere on the range, a moment that stood out, how the relay unfolded, or what this streak of podiums meant to you.",
+        "Write your anecdote here — the championship atmosphere, the transition between 3P and prone, or what four podium finishes meant to you.",
     },
-    documents: [
-      { label: "DSO 2025 certificate", type: "certificate" },
-      { label: "DSO 2024 certificate", type: "certificate" },
-      { label: "DSO 2023 certificate", type: "certificate" },
-    ],
+    documents: [{ label: "West Zone certificates", type: "certificate" }],
+  },
+  {
+    id: "dso-2026",
+    title: "District School Games",
+    org: "District Sports Office (DSO) · Under-19",
+    period: "2026",
+    badge: "1st place",
+    description: "Gold medal finish at the 2026 District School Games in the Under-19 category.",
+    bullets: ["1st place — Under-19"],
+    anecdote: {
+      title: "Memo",
+      body: "Write your anecdote here — the 2026 match, the decisive series, or what moving into the Under-19 category meant to you.",
+    },
+    documents: [{ label: "DSO 2026 certificate", type: "certificate" }],
   },
   {
     id: "capt-ezekiel",
@@ -183,6 +194,48 @@ export const shooting: PortfolioItem[] = [
         "Write your anecdote here — your first state gold, the build-up to the final, the shot that put you ahead, and what the title meant going forward.",
     },
     documents: [{ label: "Maharashtra Air Gun certificate", type: "certificate" }],
+  },
+  {
+    id: "dso-2025",
+    title: "District School Games",
+    org: "District Sports Office (DSO) · Under-17",
+    period: "2025",
+    badge: "3rd place",
+    description: "Bronze medal finish in Peep Sight at the 2025 District School Games.",
+    bullets: ["3rd place — Peep Sight, Under-17"],
+    anecdote: {
+      title: "Memo",
+      body: "Write your anecdote here — the atmosphere on the range, your preparation, or the moment the result was announced.",
+    },
+    documents: [{ label: "DSO 2025 certificate", type: "certificate" }],
+  },
+  {
+    id: "dso-2024",
+    title: "District School Games",
+    org: "District Sports Office (DSO) · Under-17",
+    period: "2024",
+    badge: "2nd place",
+    description: "Silver medal finish at the 2024 District School Games in the Under-17 category.",
+    bullets: ["2nd place — Under-17"],
+    anecdote: {
+      title: "Memo",
+      body: "Write your anecdote here — a memorable series, what challenged you, or what you learned from the competition.",
+    },
+    documents: [{ label: "DSO 2024 certificate", type: "certificate" }],
+  },
+  {
+    id: "dso-2023",
+    title: "District School Games",
+    org: "District Sports Office (DSO) · Under-17",
+    period: "2023",
+    badge: "2nd place",
+    description: "Silver medal finish at the 2023 District School Games in the Under-17 category.",
+    bullets: ["2nd place — Under-17"],
+    anecdote: {
+      title: "Memo",
+      body: "Write your anecdote here — your first DSO podium, the match experience, or what the result inspired next.",
+    },
+    documents: [{ label: "DSO 2023 certificate", type: "certificate" }],
   },
 ];
 
