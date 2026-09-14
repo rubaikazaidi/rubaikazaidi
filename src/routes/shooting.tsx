@@ -88,7 +88,7 @@ function ShootingPage() {
                   ) : null}
                 </div>
                 {item.description ? (
-                  <p className={`mt-4 leading-relaxed ${darkTile ? "text-ink-foreground/75" : "text-foreground/75"}`}>
+                  <p className="mt-4 leading-relaxed text-foreground/75">
                     {item.description}
                   </p>
                 ) : null}
