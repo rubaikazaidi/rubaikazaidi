@@ -102,41 +102,6 @@ export const olympiads: PortfolioItem[] = [
 
 export const shooting: PortfolioItem[] = [
   {
-    id: "west-zone-13",
-    title: "13th West Zone Shooting Championship",
-    org: "50m Rifle · Women",
-    period: "2026",
-    badge: "4 Podiums",
-    description:
-      "Four podium finishes across the Youth, Junior and Senior Women categories in 50m rifle events.",
-    bullets: [
-      "1st place — 50m Youth Women 3P",
-      "1st place — 50m Junior Women 3P",
-      "2nd place — 50m Senior Women 3P",
-      "3rd place — 50m Youth Women Prone",
-    ],
-    anecdote: {
-      title: "Memo",
-      body:
-        "Write your anecdote here — the championship atmosphere, the transition between 3P and prone, or what four podium finishes meant to you.",
-    },
-    documents: [{ label: "West Zone certificates", type: "certificate" }],
-  },
-  {
-    id: "dso-2026",
-    title: "District School Games",
-    org: "District Sports Office (DSO) · Under-19",
-    period: "2026",
-    badge: "1st place",
-    description: "Gold medal finish at the 2026 District School Games in the Under-19 category.",
-    bullets: ["1st place — Under-19"],
-    anecdote: {
-      title: "Memo",
-      body: "Write your anecdote here — the 2026 match, the decisive series, or what moving into the Under-19 category meant to you.",
-    },
-    documents: [{ label: "DSO 2026 certificate", type: "certificate" }],
-  },
-  {
     id: "capt-ezekiel-50m",
     title: "Capt Ezekiel Championships — 50m",
     org: "Capt Ezekiel Memorial Shooting Championship · 50m Rifle 3 Positions",
@@ -162,6 +127,27 @@ export const shooting: PortfolioItem[] = [
     ],
   },
   {
+    id: "west-zone-13",
+    title: "13th West Zone Shooting Championship",
+    org: "50m Rifle · Women",
+    period: "2026",
+    badge: "4 Podiums",
+    description:
+      "Four podium finishes across the Youth, Junior and Senior Women categories in 50m rifle events.",
+    bullets: [
+      "1st place — 50m Youth Women 3P",
+      "1st place — 50m Junior Women 3P",
+      "2nd place — 50m Senior Women 3P",
+      "3rd place — 50m Youth Women Prone",
+    ],
+    anecdote: {
+      title: "Memo",
+      body:
+        "Write your anecdote here — the championship atmosphere, the transition between 3P and prone, or what four podium finishes meant to you.",
+    },
+    documents: [{ label: "West Zone certificates", type: "certificate" }],
+  },
+  {
     id: "capt-ezekiel-10m",
     title: "Capt Ezekiel Championships — 10m",
     org: "Capt Ezekiel Memorial Shooting Championship · 10m Air Rifle",
@@ -184,20 +170,18 @@ export const shooting: PortfolioItem[] = [
     ],
   },
   {
-    id: "sfa-tournament",
-    title: "SFA Tournament",
-    org: "Sports for All",
-    period: "U-19",
-    badge: "2nd place",
-    description:
-      "Silver medal finish in the U-19 category at the SFA Tournament.",
+    id: "dso-2026",
+    title: "District School Games",
+    org: "District Sports Office (DSO) · Under-19",
+    period: "2026",
+    badge: "1st place",
+    description: "Gold medal finish at the 2026 District School Games in the Under-19 category.",
+    bullets: ["1st place — Under-19"],
     anecdote: {
       title: "Memo",
-      body:
-        "Write your anecdote here — the final, who you were up against, the shot sequence that sealed silver, and what you carried away from the match.",
+      body: "Write your anecdote here — the 2026 match, the decisive series, or what moving into the Under-19 category meant to you.",
     },
-    documents: [{ label: "SFA certificate", type: "certificate" }],
-    instagram: "https://www.instagram.com/p/DDyblAat2Gg/",
+    documents: [{ label: "DSO 2026 certificate", type: "certificate" }],
   },
   {
     id: "maharashtra-air-gun",
@@ -215,18 +199,20 @@ export const shooting: PortfolioItem[] = [
     documents: [{ label: "Maharashtra Air Gun certificate", type: "certificate" }],
   },
   {
-    id: "dso-2025",
-    title: "District School Games",
-    org: "District Sports Office (DSO) · Under-17",
-    period: "2025",
-    badge: "3rd place",
-    description: "Bronze medal finish in Peep Sight at the 2025 District School Games.",
-    bullets: ["3rd place — Peep Sight, Under-17"],
+    id: "sfa-tournament",
+    title: "SFA Tournament",
+    org: "Sports for All",
+    period: "U-19",
+    badge: "2nd place",
+    description:
+      "Silver medal finish in the U-19 category at the SFA Tournament.",
     anecdote: {
       title: "Memo",
-      body: "Write your anecdote here — the atmosphere on the range, your preparation, or the moment the result was announced.",
+      body:
+        "Write your anecdote here — the final, who you were up against, the shot sequence that sealed silver, and what you carried away from the match.",
     },
-    documents: [{ label: "DSO 2025 certificate", type: "certificate" }],
+    documents: [{ label: "SFA certificate", type: "certificate" }],
+    instagram: "https://www.instagram.com/p/DDyblAat2Gg/",
   },
   {
     id: "dso-2024",
@@ -255,6 +241,20 @@ export const shooting: PortfolioItem[] = [
       body: "Write your anecdote here — your first DSO podium, the match experience, or what the result inspired next.",
     },
     documents: [{ label: "DSO 2023 certificate", type: "certificate" }],
+  },
+  {
+    id: "dso-2025",
+    title: "District School Games",
+    org: "District Sports Office (DSO) · Under-17",
+    period: "2025",
+    badge: "3rd place",
+    description: "Bronze medal finish in Peep Sight at the 2025 District School Games.",
+    bullets: ["3rd place — Peep Sight, Under-17"],
+    anecdote: {
+      title: "Memo",
+      body: "Write your anecdote here — the atmosphere on the range, your preparation, or the moment the result was announced.",
+    },
+    documents: [{ label: "DSO 2025 certificate", type: "certificate" }],
   },
 ];
 
