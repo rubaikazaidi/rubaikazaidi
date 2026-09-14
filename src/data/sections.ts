@@ -137,31 +137,50 @@ export const shooting: PortfolioItem[] = [
     documents: [{ label: "DSO 2026 certificate", type: "certificate" }],
   },
   {
-    id: "capt-ezekiel",
-    title: "Capt Ezekiel Championships",
-    org: "Capt Ezekiel Memorial Shooting Championship",
-    period: "10m air rifle · 50m rifle 3 positions",
-    badge: "8 Podiums",
+    id: "capt-ezekiel-50m",
+    title: "Capt Ezekiel Championships — 50m",
+    org: "Capt Ezekiel Memorial Shooting Championship · 50m Rifle 3 Positions",
+    period: "2026",
+    badge: "5 Podiums",
     description:
-      "Multiple podium finishes across Sub-Youth, Youth, Junior and Senior women categories in 10m air rifle and 50m rifle 3 positions.",
+      "Five podium finishes across Youth, Junior and Senior women categories in 50m rifle 3 positions at the 2026 Capt Ezekiel Memorial Shooting Championship.",
     bullets: [
-      "1st (50m) — 50m Youth Women",
-      "1st (50m) — 50m Junior Women 3P",
-      "2nd (10m) — 10m Sub-Youth Women",
-      "2nd (10m) — 10m Youth Women",
-      "2nd (50m) — 50m Youth Women 3P",
-      "2nd (50m) — 50m Junior Women 3P",
-      "2nd (50m) — 50m Seniors Women 3P",
-      "3rd (10m) — 10m Junior Women",
+      "1st — 50m Youth Women",
+      "1st — 50m Junior Women 3P",
+      "2nd — 50m Youth Women 3P",
+      "2nd — 50m Junior Women 3P",
+      "2nd — 50m Seniors Women 3P",
     ],
     anecdote: {
       title: "Memo",
       body:
-        "Write your anecdote here — the shift between the 10m and 50m ranges, a key shot, the relay that decided a gold, or how it felt to podium across four age categories.",
+        "Write your anecdote here — a key shot in the 3P final, the relay that decided a gold, or what five podiums in one championship meant to you.",
     },
     instagram: "https://www.instagram.com/p/DZ4qUAaNkqD/",
     documents: [
-      { label: "Capt Ezekiel result sheet", type: "certificate" },
+      { label: "Capt Ezekiel 50m result sheet", type: "certificate" },
+    ],
+  },
+  {
+    id: "capt-ezekiel-10m",
+    title: "Capt Ezekiel Championships — 10m",
+    org: "Capt Ezekiel Memorial Shooting Championship · 10m Air Rifle",
+    period: "2024",
+    badge: "3 Podiums",
+    description:
+      "Three podium finishes across Sub-Youth, Youth and Junior women categories in 10m air rifle at the 2024 Capt Ezekiel Memorial Shooting Championship.",
+    bullets: [
+      "2nd — 10m Sub-Youth Women",
+      "2nd — 10m Youth Women",
+      "3rd — 10m Junior Women",
+    ],
+    anecdote: {
+      title: "Memo",
+      body:
+        "Write your anecdote here — the 10m range atmosphere, a decisive series, or what your first Capt Ezekiel podiums meant going into the 50m championship.",
+    },
+    documents: [
+      { label: "Capt Ezekiel 10m result sheet", type: "certificate" },
     ],
   },
   {
