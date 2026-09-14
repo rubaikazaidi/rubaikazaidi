@@ -76,7 +76,7 @@ function ShootingPage() {
               </div>
 
               <div className="p-6 sm:p-7">
-                <p className={`font-sans text-xs uppercase tracking-[0.18em] ${darkTile ? "text-gold" : "text-primary"}`}>
+                <p className="font-sans text-xs uppercase tracking-[0.18em] text-primary">
                   {item.org}
                 </p>
                 <div className="mt-2 grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4">
