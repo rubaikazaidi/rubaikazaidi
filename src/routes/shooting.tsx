@@ -106,7 +106,7 @@ function ShootingPage() {
                 {item.anecdote ? <AnecdoteBlock anecdote={item.anecdote} /> : null}
 
                 <div className="mt-6">
-                  <p className={`font-sans text-xs uppercase tracking-[0.18em] ${darkTile ? "text-gold" : "text-muted-foreground"}`}>
+                  <p className="font-sans text-xs uppercase tracking-[0.18em] text-muted-foreground">
                     Documents
                   </p>
                   <div className="mt-2 space-y-2">
