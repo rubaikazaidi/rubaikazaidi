@@ -48,12 +48,11 @@ function ShootingPage() {
       </header>
 
       <section className="mt-10 grid items-start gap-6 md:grid-cols-2">
-        {shooting.map((item, index) => {
-          const darkTile = index % 4 === 1;
+        {shooting.map((item) => {
           return (
             <article
               key={item.id}
-              className={`overflow-hidden border ${darkTile ? "border-ink bg-ink text-ink-foreground" : "border-gold/50 bg-card text-card-foreground"}`}
+              className="overflow-hidden border border-gold/50 bg-card text-card-foreground"
             >
               <div className={`relative aspect-[16/9] overflow-hidden ${darkTile ? "bg-primary" : "bg-secondary"}`}>
                 {item.tileImage ? (
