@@ -54,7 +54,7 @@ function ShootingPage() {
               key={item.id}
               className="overflow-hidden border border-gold/50 bg-card text-card-foreground"
             >
-              <div className={`relative aspect-[16/9] overflow-hidden ${darkTile ? "bg-primary" : "bg-secondary"}`}>
+              <div className="relative aspect-[16/9] overflow-hidden bg-secondary">
                 {item.tileImage ? (
                   <img
                     src={item.tileImage}
