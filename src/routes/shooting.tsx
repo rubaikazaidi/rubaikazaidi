@@ -82,7 +82,7 @@ function ShootingPage() {
                 <div className="mt-2 grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4">
                   <h2 className="min-w-0 font-serif text-3xl leading-tight">{item.title}</h2>
                   {item.badge ? (
-                    <span className={`shrink-0 border px-3 py-1 font-sans text-xs uppercase tracking-[0.12em] ${darkTile ? "border-gold text-gold" : "border-primary/40 text-primary"}`}>
+                    <span className="shrink-0 border border-primary/40 px-3 py-1 font-sans text-xs uppercase tracking-[0.12em] text-primary">
                       {item.badge}
                     </span>
                   ) : null}
