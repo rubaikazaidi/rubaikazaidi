@@ -47,7 +47,7 @@ function ShootingPage() {
         </div>
       </header>
 
-      <section className="mt-10 grid gap-6 md:grid-cols-2">
+      <section className="mt-10 grid items-start gap-6 md:grid-cols-2">
         {shooting.map((item, index) => {
           const darkTile = index % 4 === 1;
           return (
