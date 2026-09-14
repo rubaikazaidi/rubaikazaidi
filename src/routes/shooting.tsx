@@ -47,12 +47,12 @@ function ShootingPage() {
         </div>
       </header>
 
-      <section className="mt-10 grid items-start gap-6 md:grid-cols-2">
+      <section className="mt-10 gap-6 [column-fill:_balance] md:columns-2">
         {shooting.map((item) => {
           return (
             <article
               key={item.id}
-              className="overflow-hidden border border-gold/50 bg-card text-card-foreground"
+              className="mb-6 break-inside-avoid overflow-hidden border border-gold/50 bg-card text-card-foreground"
             >
               <div className="relative aspect-[16/9] overflow-hidden bg-secondary">
                 {item.tileImage ? (
