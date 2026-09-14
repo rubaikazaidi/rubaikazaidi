@@ -48,14 +48,13 @@ function ShootingPage() {
       </header>
 
       <section className="mt-10 grid items-start gap-6 md:grid-cols-2">
-        {shooting.map((item, index) => {
-          const darkTile = index % 4 === 1;
+        {shooting.map((item) => {
           return (
             <article
               key={item.id}
-              className={`overflow-hidden border ${darkTile ? "border-ink bg-ink text-ink-foreground" : "border-gold/50 bg-card text-card-foreground"}`}
+              className="overflow-hidden border border-gold/50 bg-card text-card-foreground"
             >
-              <div className={`relative aspect-[16/9] overflow-hidden ${darkTile ? "bg-primary" : "bg-secondary"}`}>
+              <div className="relative aspect-[16/9] overflow-hidden bg-secondary">
                 {item.tileImage ? (
                   <img
                     src={item.tileImage}
@@ -77,19 +76,19 @@ function ShootingPage() {
               </div>
 
               <div className="p-6 sm:p-7">
-                <p className={`font-sans text-xs uppercase tracking-[0.18em] ${darkTile ? "text-gold" : "text-primary"}`}>
+                <p className="font-sans text-xs uppercase tracking-[0.18em] text-primary">
                   {item.org}
                 </p>
                 <div className="mt-2 grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4">
                   <h2 className="min-w-0 font-serif text-3xl leading-tight">{item.title}</h2>
                   {item.badge ? (
-                    <span className={`shrink-0 border px-3 py-1 font-sans text-xs uppercase tracking-[0.12em] ${darkTile ? "border-gold text-gold" : "border-primary/40 text-primary"}`}>
+                    <span className="shrink-0 border border-primary/40 px-3 py-1 font-sans text-xs uppercase tracking-[0.12em] text-primary">
                       {item.badge}
                     </span>
                   ) : null}
                 </div>
                 {item.description ? (
-                  <p className={`mt-4 leading-relaxed ${darkTile ? "text-ink-foreground/75" : "text-foreground/75"}`}>
+                  <p className="mt-4 leading-relaxed text-foreground/75">
                     {item.description}
                   </p>
                 ) : null}
@@ -97,7 +96,7 @@ function ShootingPage() {
                   <ul className="mt-5 border-t border-current/15 pt-4">
                     {item.bullets.map((achievement) => (
                       <li key={achievement} className="grid grid-cols-[auto_minmax(0,1fr)] gap-3 py-1.5 text-sm leading-relaxed">
-                        <span aria-hidden className={`mt-2 h-1.5 w-1.5 rotate-45 ${darkTile ? "bg-gold" : "bg-primary"}`} />
+                        <span aria-hidden className="mt-2 h-1.5 w-1.5 rotate-45 bg-primary" />
                         <span>{achievement}</span>
                       </li>
                     ))}
@@ -107,7 +106,7 @@ function ShootingPage() {
                 {item.anecdote ? <AnecdoteBlock anecdote={item.anecdote} /> : null}
 
                 <div className="mt-6">
-                  <p className={`font-sans text-xs uppercase tracking-[0.18em] ${darkTile ? "text-gold" : "text-muted-foreground"}`}>
+                  <p className="font-sans text-xs uppercase tracking-[0.18em] text-muted-foreground">
                     Documents
                   </p>
                   <div className="mt-2 space-y-2">
