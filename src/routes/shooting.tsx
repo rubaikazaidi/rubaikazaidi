@@ -96,7 +96,7 @@ function ShootingPage() {
                   <ul className="mt-5 border-t border-current/15 pt-4">
                     {item.bullets.map((achievement) => (
                       <li key={achievement} className="grid grid-cols-[auto_minmax(0,1fr)] gap-3 py-1.5 text-sm leading-relaxed">
-                        <span aria-hidden className={`mt-2 h-1.5 w-1.5 rotate-45 ${darkTile ? "bg-gold" : "bg-primary"}`} />
+                        <span aria-hidden className="mt-2 h-1.5 w-1.5 rotate-45 bg-primary" />
                         <span>{achievement}</span>
                       </li>
                     ))}
