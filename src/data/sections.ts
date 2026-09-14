@@ -145,8 +145,8 @@ export const shooting: PortfolioItem[] = [
     description:
       "Five podium finishes across Youth, Junior and Senior women categories in 50m rifle 3 positions at the 2026 Capt Ezekiel Memorial Shooting Championship.",
     bullets: [
-      "1st — 50m Youth Women",
-      "1st — 50m Junior Women 3P",
+      "1st — 50m Youth Women Prone",
+      "1st — 50m Junior Women Prone",
       "2nd — 50m Youth Women 3P",
       "2nd — 50m Junior Women 3P",
       "2nd — 50m Seniors Women 3P",
