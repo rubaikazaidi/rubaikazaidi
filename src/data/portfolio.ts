@@ -32,6 +32,8 @@ export type PortfolioItem = {
   documents?: PortfolioDocument[];
   /** Optional Instagram post URL to embed next to this entry */
   instagram?: string;
+  /** Optional 1-based carousel slide to open the Instagram embed on */
+  instagramSlide?: number;
   /** Optional lead image used by visual tile layouts */
   tileImage?: string;
   /** Optional personal anecdote / memo shown as a pull-aside under the entry */
