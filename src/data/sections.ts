@@ -132,6 +132,8 @@ export const shooting: PortfolioItem[] = [
       "2nd place — 50m Senior Women 3P",
       "3rd place — 50m Youth Women Prone",
     ],
+    tileImage: "/documents/west-zone-13.jpg",
+    instagram: "https://www.instagram.com/p/DdBwsyLjQtQ/",
   },
   {
     id: "capt-ezekiel-10m",
