@@ -116,15 +116,7 @@ export const shooting: PortfolioItem[] = [
       "2nd — 50m Junior Women 3P",
       "2nd — 50m Seniors Women 3P",
     ],
-    anecdote: {
-      title: "Memo",
-      body:
-        "Write your anecdote here — a key shot in the 3P final, the relay that decided a gold, or what five podiums in one championship meant to you.",
-    },
     instagram: "https://www.instagram.com/p/DZ4qUAaNkqD/",
-    documents: [
-      { label: "Capt Ezekiel 50m result sheet", type: "certificate" },
-    ],
   },
   {
     id: "west-zone-13",
@@ -140,12 +132,6 @@ export const shooting: PortfolioItem[] = [
       "2nd place — 50m Senior Women 3P",
       "3rd place — 50m Youth Women Prone",
     ],
-    anecdote: {
-      title: "Memo",
-      body:
-        "Write your anecdote here — the championship atmosphere, the transition between 3P and prone, or what four podium finishes meant to you.",
-    },
-    documents: [{ label: "West Zone certificates", type: "certificate" }],
   },
   {
     id: "capt-ezekiel-10m",
@@ -160,14 +146,6 @@ export const shooting: PortfolioItem[] = [
       "2nd — 10m Youth Women",
       "3rd — 10m Junior Women",
     ],
-    anecdote: {
-      title: "Memo",
-      body:
-        "Write your anecdote here — the 10m range atmosphere, a decisive series, or what your first Capt Ezekiel podiums meant going into the 50m championship.",
-    },
-    documents: [
-      { label: "Capt Ezekiel 10m result sheet", type: "certificate" },
-    ],
   },
   {
     id: "dso-2026",
@@ -177,11 +155,6 @@ export const shooting: PortfolioItem[] = [
     badge: "1st place",
     description: "Gold medal finish at the 2026 District School Games in the Under-19 category.",
     bullets: ["1st place — Under-19"],
-    anecdote: {
-      title: "Memo",
-      body: "Write your anecdote here — the 2026 match, the decisive series, or what moving into the Under-19 category meant to you.",
-    },
-    documents: [{ label: "DSO 2026 certificate", type: "certificate" }],
   },
   {
     id: "maharashtra-air-gun",
@@ -191,12 +164,6 @@ export const shooting: PortfolioItem[] = [
     badge: "1st place",
     description:
       "Gold medal in the 10m Sub-Youth Women category at the Maharashtra Air Gun Championship.",
-    anecdote: {
-      title: "Memo",
-      body:
-        "Write your anecdote here — your first state gold, the build-up to the final, the shot that put you ahead, and what the title meant going forward.",
-    },
-    documents: [{ label: "Maharashtra Air Gun certificate", type: "certificate" }],
   },
   {
     id: "sfa-tournament",
@@ -206,12 +173,6 @@ export const shooting: PortfolioItem[] = [
     badge: "2nd place",
     description:
       "Silver medal finish in the U-19 category at the SFA Tournament.",
-    anecdote: {
-      title: "Memo",
-      body:
-        "Write your anecdote here — the final, who you were up against, the shot sequence that sealed silver, and what you carried away from the match.",
-    },
-    documents: [{ label: "SFA certificate", type: "certificate" }],
     instagram: "https://www.instagram.com/p/DDyblAat2Gg/",
   },
   {
@@ -222,11 +183,6 @@ export const shooting: PortfolioItem[] = [
     badge: "2nd place",
     description: "Silver medal finish at the 2024 District School Games in the Under-17 category.",
     bullets: ["2nd place — Under-17"],
-    anecdote: {
-      title: "Memo",
-      body: "Write your anecdote here — a memorable series, what challenged you, or what you learned from the competition.",
-    },
-    documents: [{ label: "DSO 2024 certificate", type: "certificate" }],
   },
   {
     id: "dso-2023",
@@ -236,11 +192,6 @@ export const shooting: PortfolioItem[] = [
     badge: "2nd place",
     description: "Silver medal finish at the 2023 District School Games in the Under-17 category.",
     bullets: ["2nd place — Under-17"],
-    anecdote: {
-      title: "Memo",
-      body: "Write your anecdote here — your first DSO podium, the match experience, or what the result inspired next.",
-    },
-    documents: [{ label: "DSO 2023 certificate", type: "certificate" }],
   },
   {
     id: "dso-2025",
@@ -250,11 +201,6 @@ export const shooting: PortfolioItem[] = [
     badge: "3rd place",
     description: "Bronze medal finish in Peep Sight at the 2025 District School Games.",
     bullets: ["3rd place — Peep Sight, Under-17"],
-    anecdote: {
-      title: "Memo",
-      body: "Write your anecdote here — the atmosphere on the range, your preparation, or the moment the result was announced.",
-    },
-    documents: [{ label: "DSO 2025 certificate", type: "certificate" }],
   },
 ];
 
