@@ -102,19 +102,6 @@ function ShootingPage() {
                   </ul>
                 ) : null}
 
-                {item.anecdote ? <AnecdoteBlock anecdote={item.anecdote} /> : null}
-
-                <div className="mt-6">
-                  <p className="font-sans text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                    Documents
-                  </p>
-                  <div className="mt-2 space-y-2">
-                    {(item.documents?.length ? item.documents : [{ label: "Certificate", type: "certificate" as const }]).map((doc) => (
-                      <DocumentSlot key={doc.label} doc={doc} />
-                    ))}
-                  </div>
-                </div>
-
                 {item.instagram ? (
                   <div className="mt-6 overflow-hidden bg-background">
                     <InstagramEmbed url={item.instagram} />
