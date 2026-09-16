@@ -134,6 +134,7 @@ export const shooting: PortfolioItem[] = [
     ],
     tileImage: "/documents/west-zone-13.jpg",
     instagram: "https://www.instagram.com/p/DdBwsyLjQtQ/",
+    instagramSlide: 2,
   },
   {
     id: "capt-ezekiel-10m",
