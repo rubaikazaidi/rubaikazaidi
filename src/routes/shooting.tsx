@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ImageIcon } from "lucide-react";
 import { InstagramEmbed } from "@/components/instagram-embed";
 import { shooting } from "@/data/sections";
 import { profile } from "@/data/portfolio";
@@ -53,8 +52,8 @@ function ShootingPage() {
               key={item.id}
               className="mb-6 break-inside-avoid overflow-hidden border border-gold/50 bg-card text-card-foreground"
             >
-              <div className="relative aspect-[16/9] overflow-hidden bg-secondary">
-                {item.tileImage ? (
+              {item.tileImage ? (
+                <div className="relative aspect-[16/9] overflow-hidden bg-secondary">
                   <img
                     src={item.tileImage}
                     alt={`${item.title} competition`}
@@ -63,16 +62,11 @@ function ShootingPage() {
                     loading="lazy"
                     className="h-full w-full object-cover"
                   />
-                ) : (
-                  <div className="flex h-full flex-col items-center justify-center gap-3 border-b border-current/10 text-current/45">
-                    <ImageIcon aria-hidden className="h-8 w-8" strokeWidth={1.25} />
-                    <span className="font-sans text-xs uppercase tracking-[0.2em]">Competition photo</span>
-                  </div>
-                )}
-                <span className="absolute right-4 top-4 bg-primary px-3 py-1 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-primary-foreground">
-                  {item.period}
-                </span>
-              </div>
+                  <span className="absolute right-4 top-4 bg-primary px-3 py-1 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-primary-foreground">
+                    {item.period}
+                  </span>
+                </div>
+              ) : null}
 
               <div className="p-6 sm:p-7">
                 <p className="font-sans text-xs uppercase tracking-[0.18em] text-primary">
