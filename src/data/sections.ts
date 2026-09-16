@@ -116,6 +116,7 @@ export const shooting: PortfolioItem[] = [
       "2nd — 50m Junior Women 3P",
       "2nd — 50m Seniors Women 3P",
     ],
+    tileImage: "/documents/capt-ezekiel-2026.jpg",
     instagram: "https://www.instagram.com/p/DZ4qUAaNkqD/",
   },
   {
