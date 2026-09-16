@@ -117,6 +117,7 @@ export const shooting: PortfolioItem[] = [
       "2nd — 50m Seniors Women 3P",
     ],
     tileImage: "/documents/capt-ezekiel-2026.jpg",
+    tileImagePosition: "top",
     instagram: "https://www.instagram.com/p/DZ4qUAaNkqD/",
   },
   {
