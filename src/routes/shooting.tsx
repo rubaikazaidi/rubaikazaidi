@@ -106,7 +106,9 @@ function ShootingPage() {
                   <div className="mt-6 overflow-hidden bg-background">
                     <InstagramEmbed
                       url={item.instagram}
-                      carouselIndex={item.instagramSlide}
+                      {...(item.instagramSlide
+                        ? { carouselIndex: item.instagramSlide }
+                        : {})}
                     />
                   </div>
                 ) : null}
