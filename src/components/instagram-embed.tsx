@@ -43,7 +43,14 @@ function loadInstagramScript(): Promise<void> {
   return scriptPromise;
 }
 
-export function InstagramEmbed({ url }: { url: string }) {
+export function InstagramEmbed({
+  url,
+  carouselIndex,
+}: {
+  url: string;
+  /** 1-based carousel slide to open the embed on */
+  carouselIndex?: number;
+}) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -61,9 +68,13 @@ export function InstagramEmbed({ url }: { url: string }) {
     return () => {
       cancelled = true;
     };
-  }, [url]);
+  }, [url, carouselIndex]);
 
-  const postUrl = url.split("?")[0];
+  const basePostUrl = url.split("?")[0];
+  const postUrl =
+    carouselIndex && carouselIndex > 1
+      ? `${basePostUrl}?img_index=${carouselIndex}`
+      : basePostUrl;
 
   return (
     <div className="max-w-full overflow-hidden rounded-sm border border-border bg-card p-4">
