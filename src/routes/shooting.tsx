@@ -61,6 +61,7 @@ function ShootingPage() {
                     height={900}
                     loading="lazy"
                     className="h-full w-full object-cover"
+                    style={item.tileImagePosition ? { objectPosition: item.tileImagePosition } : undefined}
                   />
                   <span className="absolute right-4 top-4 bg-primary px-3 py-1 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-primary-foreground">
                     {item.period}

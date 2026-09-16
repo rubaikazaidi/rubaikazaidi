@@ -36,6 +36,8 @@ export type PortfolioItem = {
   instagramSlide?: number;
   /** Optional lead image used by visual tile layouts */
   tileImage?: string;
+  /** Optional CSS object-position for the tile image (default "center") */
+  tileImagePosition?: string;
   /** Optional personal anecdote / memo shown as a pull-aside under the entry */
   anecdote?: PortfolioAnecdote;
 };
