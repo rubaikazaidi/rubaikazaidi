@@ -53,8 +53,8 @@ function ShootingPage() {
               key={item.id}
               className="mb-6 break-inside-avoid overflow-hidden border border-gold/50 bg-card text-card-foreground"
             >
-              <div className="relative aspect-[16/9] overflow-hidden bg-secondary">
-                {item.tileImage ? (
+              {item.tileImage ? (
+                <div className="relative aspect-[16/9] overflow-hidden bg-secondary">
                   <img
                     src={item.tileImage}
                     alt={`${item.title} competition`}
@@ -63,13 +63,11 @@ function ShootingPage() {
                     loading="lazy"
                     className="h-full w-full object-cover"
                   />
-                ) : null}
-                {item.tileImage ? (
                   <span className="absolute right-4 top-4 bg-primary px-3 py-1 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-primary-foreground">
                     {item.period}
                   </span>
-                ) : null}
-              </div>
+                </div>
+              ) : null}
 
               <div className="p-6 sm:p-7">
                 <p className="font-sans text-xs uppercase tracking-[0.18em] text-primary">
