@@ -169,6 +169,7 @@ export const shooting: PortfolioItem[] = [
     badge: "1st place",
     description:
       "Gold medal in the 10m Sub-Youth Women category at the Maharashtra Air Gun Championship.",
+    tileImage: "/documents/maharashtra-air-gun.jpg",
   },
   {
     id: "sfa-tournament",
