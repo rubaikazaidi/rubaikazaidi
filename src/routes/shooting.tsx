@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ImageIcon } from "lucide-react";
 import { InstagramEmbed } from "@/components/instagram-embed";
 import { shooting } from "@/data/sections";
 import { profile } from "@/data/portfolio";
