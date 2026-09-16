@@ -150,6 +150,7 @@ export const shooting: PortfolioItem[] = [
       "2nd — 10m Youth Women",
       "3rd — 10m Junior Women",
     ],
+    tileImage: "/documents/capt-ezekiel-2024.jpg",
   },
   {
     id: "dso-2026",
