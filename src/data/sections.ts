@@ -152,7 +152,6 @@ export const shooting: PortfolioItem[] = [
       "3rd — 10m Junior Women",
     ],
     tileImage: "/documents/capt-ezekiel-2024.jpg",
-    tileImagePosition: "top",
   },
   {
     id: "dso-2026",
