@@ -63,15 +63,12 @@ function ShootingPage() {
                     loading="lazy"
                     className="h-full w-full object-cover"
                   />
-                ) : (
-                  <div className="flex h-full flex-col items-center justify-center gap-3 border-b border-current/10 text-current/45">
-                    <ImageIcon aria-hidden className="h-8 w-8" strokeWidth={1.25} />
-                    <span className="font-sans text-xs uppercase tracking-[0.2em]">Competition photo</span>
-                  </div>
-                )}
-                <span className="absolute right-4 top-4 bg-primary px-3 py-1 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-primary-foreground">
-                  {item.period}
-                </span>
+                ) : null}
+                {item.tileImage ? (
+                  <span className="absolute right-4 top-4 bg-primary px-3 py-1 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-primary-foreground">
+                    {item.period}
+                  </span>
+                ) : null}
               </div>
 
               <div className="p-6 sm:p-7">
