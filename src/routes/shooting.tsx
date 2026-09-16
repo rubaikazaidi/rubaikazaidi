@@ -60,7 +60,7 @@ function ShootingPage() {
                     width={1400}
                     height={900}
                     loading="lazy"
-                    className="h-full w-full object-cover"
+                    className={`h-full w-full object-cover ${item.tileImagePosition === "top" ? "object-top" : "object-center"}`}
                   />
                   <span className="absolute right-4 top-4 bg-primary px-3 py-1 font-sans text-xs font-semibold uppercase tracking-[0.14em] text-primary-foreground">
                     {item.period}
