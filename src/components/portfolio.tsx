@@ -87,7 +87,14 @@ export function EntryCard({ item }: { item: PortfolioItem }) {
         }`}
       >
         <div>
-          <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
+            {item.logo ? (
+              <img
+                src={item.logo}
+                alt={`${item.org ?? item.title} logo`}
+                className="h-12 w-auto max-w-[10rem] object-contain"
+              />
+            ) : null}
             <h2 className="font-serif text-2xl text-foreground">{item.title}</h2>
             {item.badge ? (
               <span className="rounded-full border border-accent/40 px-3 py-0.5 font-sans text-xs uppercase tracking-[0.16em] text-accent">
