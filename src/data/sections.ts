@@ -117,7 +117,6 @@ export const shooting: PortfolioItem[] = [
       "2nd — 50m Seniors Women 3P",
     ],
     tileImage: "/documents/capt-ezekiel-2026.jpg",
-    tileImagePosition: "top",
     instagram: "https://www.instagram.com/p/DZ4qUAaNkqD/",
   },
   {
@@ -171,7 +170,6 @@ export const shooting: PortfolioItem[] = [
     description:
       "Gold medal in the 10m Sub-Youth Women category at the Maharashtra Air Gun Championship.",
     tileImage: "/documents/maharashtra-air-gun.jpg",
-    tileImagePosition: "center 27%",
   },
   {
     id: "sfa-tournament",
