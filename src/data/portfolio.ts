@@ -64,5 +64,5 @@ export const stats = [
   { value: "17", label: "Shooting podiums" },
   { value: "8", label: "Published pieces" },
   { value: "6", label: "Committee roles" },
-  { value: "2", label: "Internships" },
+  { value: "3", label: "Internships" },
 ];
