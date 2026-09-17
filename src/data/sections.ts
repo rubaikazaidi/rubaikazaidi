@@ -263,6 +263,7 @@ export const internships: PortfolioItem[] = [
     id: "saai-ai-research",
     title: "AI Research & Innovation Program",
     org: "School of Applied Artificial Intelligence (Codex Automation Key Pvt. Ltd.)",
+    logo: "/documents/saai-logo.png",
     period: "May 2026 — June 2026",
     badge: "Research Batch — Certificate SAAI-R-2-AIRIP-07",
     description:
@@ -294,6 +295,7 @@ export const internships: PortfolioItem[] = [
     id: "suryoday-bank",
     title: "Student Intern — API Integration Team",
     org: "Suryoday Small Finance Bank Ltd · Navi Mumbai",
+    logo: "/documents/suryoday-logo.png",
     period: "February 2026 — March 2026",
     badge: "6-week placement",
     description:
@@ -307,6 +309,7 @@ export const internships: PortfolioItem[] = [
     id: "avalon-heights",
     title: "Student Intern — Tech Lead",
     org: "Avalon Heights International School · Navi Mumbai",
+    logo: "/documents/avalon-logo.png",
     period: "March 2025 — Present",
     badge: "Ongoing",
     description:
