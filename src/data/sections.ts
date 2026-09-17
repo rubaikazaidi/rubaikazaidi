@@ -263,7 +263,7 @@ export const internships: PortfolioItem[] = [
     id: "saai-ai-research",
     title: "AI Research & Innovation Program",
     org: "School of Applied Artificial Intelligence (Codex Automation Key Pvt. Ltd.)",
-    period: "2026",
+    period: "May 2026 — June 2026",
     badge: "Research Batch — Certificate SAAI-R-2-AIRIP-07",
     description:
       "An intensive applied research program covering artificial intelligence fundamentals, research methodology, data analysis, model exploration, and AI-driven problem solving.",
@@ -291,12 +291,31 @@ export const internships: PortfolioItem[] = [
     ],
   },
   {
-    id: "startup",
-    title: "Product Intern",
-    org: "Company Name",
-    period: "Dec 2024 — Feb 2025",
-    description: "Placeholder entry.",
-    documents: [{ label: "Internship certificate", type: "certificate" }],
+    id: "suryoday-bank",
+    title: "Student Intern — API Integration Team",
+    org: "Suryoday Small Finance Bank Ltd · Navi Mumbai",
+    period: "February 2026 — March 2026",
+    badge: "6-week placement",
+    description:
+      "Worked with the API Integration team at Suryoday Small Finance Bank, learning how APIs and their integration advance financial inclusion objectives.",
+    bullets: [
+      "Studied how banking APIs are designed, integrated and consumed across systems.",
+      "Worked on cataloguing selected APIs in offline mode.",
+    ],
+  },
+  {
+    id: "avalon-heights",
+    title: "Student Intern — Tech Lead",
+    org: "Avalon Heights International School · Navi Mumbai",
+    period: "March 2025 — Present",
+    badge: "Ongoing",
+    description:
+      "Part of the Avalon Heights School Programme, working as an intern supporting major school events as Tech Lead.",
+    bullets: [
+      "Tech Lead for AHMUN 7.0 and AHMUN 8.0.",
+      "Tech Lead for the school's Annual Day.",
+      "Developed a Library Management Application as an extended contribution to the school community.",
+    ],
   },
 ];
 
