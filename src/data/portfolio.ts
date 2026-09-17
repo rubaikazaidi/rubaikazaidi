@@ -22,6 +22,8 @@ export type PortfolioItem = {
   title: string;
   /** Organisation, venue, competition body, publisher... */
   org?: string;
+  /** Optional organisation/venue logo image path */
+  logo?: string;
   /** Free-form period label: "2025", "Mar 2024 — Aug 2024" */
   period?: string;
   /** Award, rank, score, role — rendered as a small badge */
