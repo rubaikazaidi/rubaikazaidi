@@ -324,6 +324,24 @@ export const internships: PortfolioItem[] = [
 
 export const international: PortfolioItem[] = [
   {
+    id: "icsc-2026-prefinal",
+    title: "International Computer Science Competition (ICSC) 2026",
+    org: "ICSC · Pre-Final Round",
+    period: "August 2026",
+    badge: "Pre-Final Round participant",
+    description:
+      "Participated in the Pre-Final Round of the 2026 International Computer Science Competition. Verify-ID PF-2026-10375F928251.",
+    link: { label: "Verify certificate", href: "https://icscompetition.org/verify" },
+    documents: [
+      {
+        label: "ICSC 2026 Pre-Final certificate",
+        type: "certificate",
+        file: "/documents/icsc-2026-prefinal.pdf",
+        image: "/documents/icsc-2026-prefinal.jpg",
+      },
+    ],
+  },
+  {
     id: "icsc-2026",
     title: "International Computer Science Competition (ICSC) 2026",
     org: "ICSC · Qualification Round",
