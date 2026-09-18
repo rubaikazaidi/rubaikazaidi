@@ -378,8 +378,8 @@ export const international: PortfolioItem[] = [
 ];
 
 export const sections = [
-  { key: "olympiads", label: "Olympiads", href: "/olympiads", blurb: "Academic Excellence", items: olympiads },
   { key: "shooting", label: "Shooting", href: "/shooting", blurb: "Precision Athletics", items: shooting },
+  { key: "olympiads", label: "Olympiads", href: "/olympiads", blurb: "Academic Excellence", items: olympiads },
   { key: "international", label: "Certifications", href: "/international", blurb: "International Standing", items: international },
   { key: "writing", label: "Writing", href: "/writing", blurb: "Published Works", items: writing },
   { key: "committees", label: "Leadership", href: "/committees", blurb: "Institutional Roles", items: committees },
