@@ -104,8 +104,8 @@ export function InstagramEmbed({
         >
           <a
             href={postUrl}
-            target="_top"
-            rel="external noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-accent underline"
           >
             View this post on Instagram
