@@ -118,6 +118,17 @@ export function EntryCard({ item }: { item: PortfolioItem }) {
               ))}
             </ul>
           ) : null}
+          {item.link && /youtube\.com\/watch\?v=|youtu\.be\//.test(item.link.href) ? (
+            <div className="mt-5 aspect-video w-full overflow-hidden rounded-md border border-border">
+              <iframe
+                className="h-full w-full"
+                src={`https://www.youtube-nocookie.com/embed/${(item.link.href.match(/(?:v=|youtu\.be\/)([\w-]{11})/) ?? [])[1]}`}
+                title={item.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          ) : null}
           {item.link ? (
             <a
               href={item.link.href}

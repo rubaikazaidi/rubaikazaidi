@@ -266,7 +266,7 @@ export const committees: PortfolioItem[] = [
     badge: "Filmmaking",
     description:
       "Filmed and edited the behind-the-scenes 'making of' film for the school's silver jubilee annual day.",
-    link: { label: "Watch on YouTube", href: "https://youtu.be/vSTCquHpPEg?si=IpMsmF1YY7JKHZY-" },
+    link: { label: "Watch on YouTube", href: "https://www.youtube.com/watch?v=vSTCquHpPEg" },
   },
   {
     id: "farewell-2026",
