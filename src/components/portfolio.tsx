@@ -121,8 +121,8 @@ export function EntryCard({ item }: { item: PortfolioItem }) {
           {item.link ? (
             <a
               href={item.link.href}
-              target="_top"
-              rel="external noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-5 inline-block border-b border-accent/50 font-sans text-sm text-accent transition-colors hover:border-accent"
             >
               {item.link.label}
