@@ -1,11 +1,14 @@
 {
-  "name": "tanstack_start_ts",
+  "name": "rubaika-zaidi-portfolio",
+  "version": "1.0.0",
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "main": ".output/server/index.mjs",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "start": "node .output/server/index.mjs",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
