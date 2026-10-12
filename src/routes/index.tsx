@@ -80,16 +80,6 @@ function Index() {
             <p className="max-w-xl text-lg leading-relaxed text-foreground/80">{profile.intro}</p>
           </div>
 
-          <dl className="mt-10 grid grid-cols-2 gap-x-8 gap-y-5 border-t border-primary/20 pt-6 sm:grid-cols-3">
-            {stats.map((s) => (
-              <div key={s.label}>
-                <dt className="font-serif text-4xl leading-none text-primary">{s.value}</dt>
-                <dd className="mt-1 font-sans text-[10px] uppercase leading-snug tracking-[0.16em] text-muted-foreground">
-                  {s.label}
-                </dd>
-              </div>
-            ))}
-          </dl>
         </div>
 
         <figure className="md:col-span-5">
@@ -105,6 +95,23 @@ function Index() {
             <span className="shrink-0 text-primary">Enlarge</span>
           </figcaption>
         </figure>
+      </section>
+
+      {/* At a glance */}
+      <section className="grid grid-cols-2 border-t border-primary/25 sm:grid-cols-5">
+        {stats.map((s, i) => (
+          <div
+            key={s.label}
+            className={`flex flex-col justify-between gap-3 px-4 py-7 ${
+              i === 0 ? "" : "sm:border-l sm:border-primary/20"
+            } ${i > 1 ? "border-t border-primary/20 sm:border-t-0" : "border-t border-primary/20 sm:border-t-0"}`}
+          >
+            <dt className="font-serif text-4xl leading-none text-primary sm:text-5xl">{s.value}</dt>
+            <dd className="font-sans text-[10px] uppercase leading-snug tracking-[0.14em] text-muted-foreground">
+              {s.label}
+            </dd>
+          </div>
+        ))}
       </section>
 
       {/* Contents */}
@@ -140,12 +147,12 @@ function Index() {
       </section>
 
       {/* Editor's note */}
-      <section className="grid grid-cols-1 gap-8 border-t border-primary/25 px-1 py-12 md:grid-cols-12">
-        <h2 className="font-sans text-[10px] uppercase tracking-[0.3em] text-primary md:col-span-3">
+      <section className="border-t border-primary/25 px-1 py-12">
+        <h2 className="font-sans text-[10px] uppercase tracking-[0.3em] text-primary">
           Editor&apos;s note
         </h2>
-        <div className="md:col-span-9">
-          <p className="max-w-2xl text-lg leading-relaxed text-foreground/85 first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-6xl first-letter:leading-[0.78] first-letter:text-primary">
+        <div className="mt-6">
+          <p className="max-w-2xl text-lg leading-relaxed text-foreground/85 first-letter:float-left first-letter:mt-1 first-letter:mr-3 first-letter:font-serif first-letter:text-6xl first-letter:leading-[0.72] first-letter:text-primary">
             Seventeen podiums, eleven olympiad awards and eight published pieces sit behind this
             page. What follows is the record itself — competition by competition, rank by rank,
             with the certificate that proves each one.
