@@ -7,7 +7,7 @@ const nav = [
   { to: "/olympiads", label: "Olympiads" },
   { to: "/international", label: "Certifications" },
   { to: "/writing", label: "Writing" },
-  { to: "/committees", label: "Leadership" },
+  { to: "/committees", label: "Initiatives" },
   { to: "/internships", label: "Internships" },
   { to: "/documents", label: "Documents" },
   { to: "/contact", label: "Contact" },
