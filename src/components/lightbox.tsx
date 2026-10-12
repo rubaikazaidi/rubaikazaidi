@@ -30,7 +30,7 @@ export function Lightbox({
       role="dialog"
       aria-modal="true"
       aria-label={source.caption ?? "Document preview"}
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-4 bg-ink/92 p-6"
+      className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-5 bg-ink/97 p-10"
       onClick={onClose}
     >
       <button
