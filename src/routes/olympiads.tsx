@@ -6,6 +6,8 @@ import { profile } from "@/data/portfolio";
 export const Route = createFileRoute("/olympiads")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: `Olympiads & Competitions — ${profile.name}` },
       {
         name: "description",
@@ -28,9 +30,9 @@ function OlympiadsPage() {
       <PageHeader
         eyebrow="Academics"
         title="Olympiads & Competitions"
-        intro="Every award listed below has a slot for its certificate. Slots marked 'to be added' are waiting on the scanned document."
+        intro="Mathematics, computing and a growing record of academic competition."
       />
-      <EntryList items={olympiads} />
+      <EntryList items={olympiads} gallery />
     </>
   );
 }

@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Inner-page collections share CollectionToolbar and EntryList for client-side search, filters and layout state; keep source achievement data unchanged when adjusting presentation.
+- Document previews and competition photos use the shared Lightbox, retaining direct file downloads and external links.

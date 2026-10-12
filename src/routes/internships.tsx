@@ -6,6 +6,8 @@ import { profile } from "@/data/portfolio";
 export const Route = createFileRoute("/internships")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: `Internships & Experience — ${profile.name}` },
       {
         name: "description",
@@ -28,7 +30,7 @@ function InternshipsPage() {
       <PageHeader
         eyebrow="Experience"
         title="Internships & Experience"
-        intro="Placements and professional work, each with space for the completion letter and supervisor recommendation."
+        intro="From applied AI research to banking technology and school-wide systems — learning through real projects."
       />
       <EntryList items={internships} />
     </>
