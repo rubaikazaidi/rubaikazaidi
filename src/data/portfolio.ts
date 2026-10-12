@@ -57,7 +57,7 @@ export const profile = {
   portraitPosition: "left center",
   portraitCaption: "XIII West Zone Shooting Championship — Goa, 2026",
   intro:
-    "I'm Rubaika Zaidi, 17, a national level rifle shooter and tech enthusiast. This profile brings together my olympiad awards, shooting podiums, leadership roles, internships, published writing, and the certificates behind each one.",
+    "I'm Rubaika Zaidi, 17, a national level rifle shooter and tech enthusiast. This profile brings together my olympiad awards, shooting podiums, leadership roles, internships, and the certificates behind each one.",
   socials: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/rubaika-zaidi-b229983b6" },
     { label: "Email", href: "mailto:rubaika.zaidi@outlook.com" },
@@ -68,7 +68,6 @@ export const profile = {
 export const stats = [
   { value: "11", label: "Olympiad & competition awards" },
   { value: "17", label: "Shooting podiums" },
-  { value: "8", label: "Published pieces" },
   { value: "6", label: "Committee roles" },
   { value: "3", label: "Internships" },
 ];

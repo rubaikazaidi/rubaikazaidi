@@ -6,7 +6,6 @@ const nav = [
   { to: "/shooting", label: "Shooting" },
   { to: "/olympiads", label: "Olympiads" },
   { to: "/international", label: "Certifications" },
-  { to: "/writing", label: "Writing" },
   { to: "/committees", label: "Initiatives" },
   { to: "/internships", label: "Internships" },
   { to: "/documents", label: "Documents" },

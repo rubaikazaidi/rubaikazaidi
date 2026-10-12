@@ -17,7 +17,6 @@ import { Route as InternationalRouteImport } from './routes/international'
 import { Route as InternshipsRouteImport } from './routes/internships'
 import { Route as OlympiadsRouteImport } from './routes/olympiads'
 import { Route as ShootingRouteImport } from './routes/shooting'
-import { Route as WritingRouteImport } from './routes/writing'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -59,11 +58,6 @@ const ShootingRoute = ShootingRouteImport.update({
   path: '/shooting',
   getParentRoute: () => rootRouteImport,
 } as any)
-const WritingRoute = WritingRouteImport.update({
-  id: '/writing',
-  path: '/writing',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -74,7 +68,6 @@ export interface FileRoutesByFullPath {
   '/internships': typeof InternshipsRoute
   '/olympiads': typeof OlympiadsRoute
   '/shooting': typeof ShootingRoute
-  '/writing': typeof WritingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -85,7 +78,6 @@ export interface FileRoutesByTo {
   '/internships': typeof InternshipsRoute
   '/olympiads': typeof OlympiadsRoute
   '/shooting': typeof ShootingRoute
-  '/writing': typeof WritingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -97,7 +89,6 @@ export interface FileRoutesById {
   '/internships': typeof InternshipsRoute
   '/olympiads': typeof OlympiadsRoute
   '/shooting': typeof ShootingRoute
-  '/writing': typeof WritingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -110,7 +101,6 @@ export interface FileRouteTypes {
     | '/internships'
     | '/olympiads'
     | '/shooting'
-    | '/writing'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -121,7 +111,6 @@ export interface FileRouteTypes {
     | '/internships'
     | '/olympiads'
     | '/shooting'
-    | '/writing'
   id:
     | '__root__'
     | '/'
@@ -132,7 +121,6 @@ export interface FileRouteTypes {
     | '/internships'
     | '/olympiads'
     | '/shooting'
-    | '/writing'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -144,7 +132,6 @@ export interface RootRouteChildren {
   InternshipsRoute: typeof InternshipsRoute
   OlympiadsRoute: typeof OlympiadsRoute
   ShootingRoute: typeof ShootingRoute
-  WritingRoute: typeof WritingRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -205,13 +192,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ShootingRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/writing': {
-      id: '/writing'
-      path: '/writing'
-      fullPath: '/writing'
-      preLoaderRoute: typeof WritingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -224,7 +204,6 @@ const rootRouteChildren: RootRouteChildren = {
   InternshipsRoute: InternshipsRoute,
   OlympiadsRoute: OlympiadsRoute,
   ShootingRoute: ShootingRoute,
-  WritingRoute: WritingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
