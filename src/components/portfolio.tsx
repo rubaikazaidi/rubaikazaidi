@@ -1,5 +1,7 @@
 import type { PortfolioAnecdote, PortfolioDocument, PortfolioItem } from "@/data/portfolio";
 import { InstagramEmbed } from "@/components/instagram-embed";
+import { Lightbox } from "@/components/lightbox";
+import { useState } from "react";
 
 export function PageHeader({
   eyebrow,
