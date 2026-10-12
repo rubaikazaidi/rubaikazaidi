@@ -440,7 +440,7 @@ export const sections = [
   { key: "olympiads", label: "Olympiads", href: "/olympiads", blurb: "Academic Excellence", items: olympiads },
   { key: "international", label: "Certifications", href: "/international", blurb: "International Standing", items: international },
   { key: "writing", label: "Writing", href: "/writing", blurb: "Published Works", items: writing },
-  { key: "committees", label: "Leadership", href: "/committees", blurb: "Institutional Roles", items: committees },
+  { key: "committees", label: "Initiatives", href: "/committees", blurb: "Institutional Roles", items: committees },
   { key: "internships", label: "Internships", href: "/internships", blurb: "Professional Experience", items: internships },
 ] as const;
 

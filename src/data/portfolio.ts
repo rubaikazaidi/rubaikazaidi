@@ -47,7 +47,7 @@ export type PortfolioItem = {
 export const profile = {
   name: "Rubaika Zaidi",
   age: 17,
-  tagline: "National Level Rifle Shooter | Tech Enthusiast",
+  tagline: "Student | National Level Rifle Shooter | Tech Enthusiast",
   location: "Navi Mumbai, Maharashtra",
   email: "rubaika.zaidi@outlook.com",
   phone: "+91 93725 93707",
