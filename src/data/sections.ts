@@ -210,6 +210,7 @@ export const shooting: PortfolioItem[] = [
   },
 ];
 
+export const committees: PortfolioItem[] = [
   {
     id: "hackathon",
     title: "Hackathon — Overall Incharge",
