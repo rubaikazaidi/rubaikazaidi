@@ -52,6 +52,10 @@ export const profile = {
   email: "rubaika.zaidi@outlook.com",
   phone: "+91 93725 93707",
   linkedin: "https://www.linkedin.com/in/rubaika-zaidi-b229983b6",
+  /** Cover portrait: drop the file in public/documents/ and point here. */
+  portrait: "/documents/west-zone-13.jpg",
+  portraitPosition: "left center",
+  portraitCaption: "XIII West Zone Shooting Championship — Goa, 2026",
   intro:
     "I'm Rubaika Zaidi, 17, a national level rifle shooter and tech enthusiast. This profile brings together my olympiad awards, shooting podiums, leadership roles, internships, published writing, and the certificates behind each one.",
   socials: [
