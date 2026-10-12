@@ -1,5 +1,7 @@
 import type { PortfolioAnecdote, PortfolioDocument, PortfolioItem } from "@/data/portfolio";
 import { InstagramEmbed } from "@/components/instagram-embed";
+import { Lightbox } from "@/components/lightbox";
+import { useState } from "react";
 
 export function PageHeader({
   eyebrow,
@@ -37,37 +39,68 @@ export function AnecdoteBlock({ anecdote }: { anecdote: PortfolioAnecdote }) {
 }
 
 export function DocumentSlot({ doc }: { doc: PortfolioDocument }) {
-  if (doc.file || doc.image) {
+  const [open, setOpen] = useState(false);
+
+  if (doc.image) {
     return (
-      <div className="rounded-sm border border-border bg-card px-4 py-3">
+      <div className="border border-border bg-card">
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          aria-label={`Enlarge ${doc.label}`}
+          className="group flex w-full cursor-zoom-in items-center gap-3 p-3 text-left"
+        >
+          <img
+            src={doc.image}
+            alt={doc.label}
+            loading="lazy"
+            className="h-16 w-12 shrink-0 border border-border object-cover object-top transition-transform duration-300 group-hover:scale-105"
+          />
+          <span className="min-w-0 flex-1">
+            <span className="block font-sans text-sm text-foreground">{doc.label}</span>
+            <span className="mt-1 block font-sans text-[10px] uppercase tracking-[0.18em] text-accent">
+              Click to enlarge
+            </span>
+          </span>
+        </button>
+        {doc.file ? (
+          <a
+            href={doc.file}
+            download
+            className="block border-t border-border px-3 py-2 font-sans text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-accent"
+          >
+            Download PDF
+          </a>
+        ) : null}
+        {open ? (
+          <Lightbox
+            source={{ src: doc.image, caption: doc.label }}
+            onClose={() => setOpen(false)}
+          />
+        ) : null}
+      </div>
+    );
+  }
+
+  if (doc.file) {
+    return (
+      <div className="border border-border bg-card px-4 py-3">
         <p className="font-sans text-sm text-foreground">{doc.label}</p>
-        <div className="mt-2 flex flex-wrap gap-4">
-          {doc.image ? (
-            <a
-              href={doc.image}
-              className="border-b border-accent/50 font-sans text-xs uppercase tracking-[0.18em] text-accent transition-colors hover:border-accent"
-            >
-              View
-            </a>
-          ) : null}
-          {doc.file ? (
-            <a
-              href={doc.file}
-              download
-              className="border-b border-accent/40 font-sans text-xs uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-accent hover:text-accent"
-            >
-              Download PDF
-            </a>
-          ) : null}
-        </div>
+        <a
+          href={doc.file}
+          download
+          className="mt-2 inline-block border-b border-accent/40 font-sans text-[10px] uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:border-accent hover:text-accent"
+        >
+          Download PDF
+        </a>
       </div>
     );
   }
 
   return (
-    <div className="flex items-center justify-between gap-4 rounded-sm border border-dashed border-border px-4 py-3">
+    <div className="flex items-center justify-between gap-4 border border-dashed border-border px-4 py-3">
       <span className="font-sans text-sm text-muted-foreground">{doc.label}</span>
-      <span className="font-sans text-xs uppercase tracking-[0.18em] text-muted-foreground/70">
+      <span className="font-sans text-[10px] uppercase tracking-[0.18em] text-muted-foreground/70">
         To be added
       </span>
     </div>

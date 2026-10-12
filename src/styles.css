@@ -26,6 +26,8 @@
   --color-ink: var(--ink);
   --color-ink-foreground: var(--ink-foreground);
 
+  --shadow-elegant: 0 24px 60px -28px color-mix(in oklab, var(--ink) 55%, transparent);
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
