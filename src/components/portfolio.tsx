@@ -80,6 +80,6 @@ export function EntryList({ items, gallery = false }: { items: PortfolioItem[]; 
   const visible = items.filter((item) => (year === "All" || item.period?.includes(year)) && [item.title, item.org, item.description, item.badge, ...(item.bullets ?? [])].join(" ").toLowerCase().includes(query.toLowerCase()));
   return <div className="mt-8">
     <CollectionToolbar query={query} onQuery={setQuery} filters={years.length > 1 ? years : []} active={year} onFilter={setYear} view={view} onView={setView} count={visible.length} />
-    {visible.length ? <div className={view === "grid" ? "gap-6 md:columns-2" : "mx-auto max-w-3xl"}>{visible.map((item) => <EntryCard key={item.id} item={item} index={items.indexOf(item)} gallery={gallery} />)}</div> : <EmptyCollection onReset={() => { setQuery(""); setYear("All"); }} />}
+    {visible.length ? <div className={view === "grid" ? "grid items-start gap-x-6 md:grid-cols-2" : "mx-auto max-w-3xl"}>{visible.map((item) => <EntryCard key={item.id} item={item} index={items.indexOf(item)} gallery={gallery} />)}</div> : <EmptyCollection onReset={() => { setQuery(""); setYear("All"); }} />}
   </div>;
 }

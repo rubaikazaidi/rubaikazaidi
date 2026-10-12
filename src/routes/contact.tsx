@@ -41,7 +41,7 @@ function ContactPage() {
           { label: "Phone", value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, "")}`, Icon: Phone },
         ].map(({ label, value, href, Icon }) => <div key={label} className="group flex items-center gap-4 border-b border-primary/20 py-6">
           <span className="flex size-12 shrink-0 items-center justify-center bg-secondary text-primary"><Icon className="size-5" /></span>
-          <div className="min-w-0 flex-1"><p className="mb-2 text-xs uppercase text-muted-foreground">{label}</p><a href={href} className="break-all font-serif text-xl text-primary transition-colors hover:text-foreground sm:text-2xl">{value}</a></div>
+          <div className="min-w-0 flex-1"><p className="mb-2 text-xs uppercase text-muted-foreground">{label}</p><a href={href} className="break-words font-sans text-sm text-primary transition-colors hover:text-foreground sm:font-serif sm:text-2xl">{value}</a></div>
           <Button variant="outline" size="icon" title={`Copy ${label.toLowerCase()}`} aria-label={`Copy ${label.toLowerCase()}`} onClick={() => copy(value)}>{copied === value ? <Check /> : <Copy />}</Button>
         </div>)}
         <div aria-live="polite" className="mt-3 text-xs text-primary">{copyError ? "Could not copy. Please select the contact detail instead." : copied ? "Copied to clipboard" : ""}</div>
