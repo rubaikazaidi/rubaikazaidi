@@ -6,6 +6,8 @@ import { profile } from "@/data/portfolio";
 export const Route = createFileRoute("/committees")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: `Initiatives — ${profile.name}` },
       {
         name: "description",
@@ -28,7 +30,7 @@ function CommitteesPage() {
       <PageHeader
         eyebrow="Committees & Projects"
         title="Initiatives"
-        intro="Roles held on organising committees and student bodies, with appointment letters and contribution certificates."
+        intro="Leading teams, building experiences and bringing ideas to life — across events, technology and film."
       />
       <EntryList items={committees} />
     </>

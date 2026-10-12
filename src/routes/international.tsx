@@ -33,9 +33,9 @@ function InternationalPage() {
       <PageHeader
         eyebrow="Global"
         title="International Competitions & Certifications"
-        intro="Competitions entered beyond the national circuit, alongside technical certifications. Each entry links to its certificate as a viewable image and a downloadable PDF."
+        intro="Computing, sustainability and technical learning beyond the classroom."
       />
-      <EntryList items={international} />
+      <EntryList items={international} gallery />
     </>
   );
 }
