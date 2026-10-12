@@ -102,14 +102,16 @@ function Index() {
         {stats.map((s, i) => (
           <div
             key={s.label}
-            className={`flex flex-col justify-between gap-3 px-4 py-7 ${
+            className={`flex flex-col justify-between gap-3 border-t border-primary/20 px-4 py-7 sm:border-t-0 ${
               i === 0 ? "" : "sm:border-l sm:border-primary/20"
-            } ${i > 1 ? "border-t border-primary/20 sm:border-t-0" : "border-t border-primary/20 sm:border-t-0"}`}
+            }`}
           >
-            <dt className="font-serif text-4xl leading-none text-primary sm:text-5xl">{s.value}</dt>
-            <dd className="font-sans text-[10px] uppercase leading-snug tracking-[0.14em] text-muted-foreground">
+            <span className="block font-serif text-4xl leading-none text-primary sm:text-5xl">
+              {s.value}
+            </span>
+            <span className="block font-sans text-[10px] uppercase leading-snug tracking-[0.14em] text-muted-foreground">
               {s.label}
-            </dd>
+            </span>
           </div>
         ))}
       </section>
