@@ -13,13 +13,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Olympiad awards, competitive shooting record, published writing, leadership roles, internships and supporting certificates.",
+          "Olympiad awards, competitive shooting record, leadership roles, internships and supporting certificates.",
       },
       { property: "og:title", content: `${profile.name} — Portfolio` },
       {
         property: "og:description",
         content:
-          "Olympiad awards, competitive shooting, published writing, leadership and internships.",
+          "Olympiad awards, competitive shooting, leadership and internships.",
       },
       { property: "og:image", content: COVER_IMAGE },
       { name: "twitter:image", content: COVER_IMAGE },
@@ -98,7 +98,7 @@ function Index() {
       </section>
 
       {/* At a glance */}
-      <section className="grid grid-cols-2 border-t border-primary/25 sm:grid-cols-5">
+      <section className="grid grid-cols-2 border-t border-primary/25 sm:grid-cols-4">
         {stats.map((s, i) => (
           <div
             key={s.label}
@@ -155,9 +155,9 @@ function Index() {
         </h2>
         <div className="mt-6">
           <p className="max-w-2xl text-lg leading-relaxed text-foreground/85 first-letter:float-left first-letter:mt-1 first-letter:mr-3 first-letter:font-serif first-letter:text-6xl first-letter:leading-[0.72] first-letter:text-primary">
-            Seventeen podiums, eleven olympiad awards and eight published pieces sit behind this
-            page. What follows is the record itself — competition by competition, rank by rank,
-            with the certificate that proves each one.
+            Seventeen podiums and eleven olympiad awards sit behind this page. What follows is the
+            record itself — competition by competition, rank by rank, with the certificate that
+            proves each one.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 font-sans text-xs uppercase tracking-[0.18em]">
             <a

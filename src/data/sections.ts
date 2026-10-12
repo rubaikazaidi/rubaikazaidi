@@ -210,30 +210,6 @@ export const shooting: PortfolioItem[] = [
   },
 ];
 
-export const writing: PortfolioItem[] = [
-  {
-    id: "essay-1",
-    title: "Title of Your Essay or Article",
-    org: "Publication or Journal",
-    period: "2025",
-    badge: "Feature",
-    description:
-      "Placeholder entry. One or two sentences on what the piece argues and why it mattered.",
-    link: { label: "Read online", href: "#" },
-    documents: [{ label: "PDF copy", type: "publication" }],
-  },
-  {
-    id: "essay-2",
-    title: "Short Story or Column Title",
-    org: "School Literary Review",
-    period: "2024",
-    badge: "Editor's pick",
-    description: "Placeholder entry.",
-    documents: [{ label: "PDF copy", type: "publication" }],
-  },
-];
-
-export const committees: PortfolioItem[] = [
   {
     id: "hackathon",
     title: "Hackathon — Overall Incharge",
@@ -439,7 +415,6 @@ export const sections = [
   { key: "shooting", label: "Shooting", href: "/shooting", blurb: "Precision Athletics", items: shooting },
   { key: "olympiads", label: "Olympiads", href: "/olympiads", blurb: "Academic Excellence", items: olympiads },
   { key: "international", label: "Certifications", href: "/international", blurb: "International Standing", items: international },
-  { key: "writing", label: "Writing", href: "/writing", blurb: "Published Works", items: writing },
   { key: "committees", label: "Initiatives", href: "/committees", blurb: "Institutional Roles", items: committees },
   { key: "internships", label: "Internships", href: "/internships", blurb: "Professional Experience", items: internships },
 ] as const;
