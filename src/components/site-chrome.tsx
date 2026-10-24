@@ -5,7 +5,7 @@ const nav = [
   { to: "/", label: "Profile" },
   { to: "/shooting", label: "Shooting" },
   { to: "/olympiads", label: "Olympiads" },
-  { to: "/international", label: "Certifications" },
+  { to: "/international", label: "International" },
   { to: "/committees", label: "Initiatives" },
   { to: "/internships", label: "Internships" },
   { to: "/documents", label: "Documents" },
@@ -43,7 +43,7 @@ export function SiteFooter() {
       <div className="h-px w-full bg-gold" />
       <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
         <p className="font-sans text-xs uppercase tracking-[0.18em] text-ink-foreground/70">
-          {profile.name} · {profile.location}
+          {profile.name} · {profile.region}
         </p>
         <a
           href={`mailto:${profile.email}`}

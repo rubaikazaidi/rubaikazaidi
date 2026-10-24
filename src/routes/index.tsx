@@ -153,15 +153,25 @@ function Index() {
       {/* Editor's note */}
       <section className="border-t border-primary/25 px-1 py-12">
         <h2 className="font-sans text-[10px] uppercase tracking-[0.3em] text-primary">
-          Editor&apos;s note
+          Introduction
         </h2>
         <div className="mt-6">
           <p className="max-w-2xl text-lg leading-relaxed text-foreground/85 first-letter:float-left first-letter:mt-1 first-letter:mr-3 first-letter:font-serif first-letter:text-6xl first-letter:leading-[0.72] first-letter:text-primary">
-            Seventeen podiums and eleven olympiad awards sit behind this page. What follows is the
-            record itself — competition by competition, rank by rank, with the certificate that
-            proves each one.
+            I&rsquo;m Rubaika Zaidi, a Science student at Avalon Heights International School and a
+            rifle shooter who has competed at the National Shooting Championship. I build software
+            and IoT projects in Python and Java, and I&rsquo;m applying to study [course]. This site
+            holds the results, projects and certificates behind that.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 font-sans text-xs uppercase tracking-[0.18em]">
+            <a
+              href={profile.resumeFile}
+              download="Rubaika-Zaidi-Resume.pdf"
+              target="_top"
+              rel="external noreferrer"
+              className="border-b border-primary/40 text-primary transition-colors hover:border-gold hover:text-gold"
+            >
+              Download resume (PDF)
+            </a>
             <a
               href={`mailto:${profile.email}`}
               className="border-b border-primary/40 text-primary transition-colors hover:border-gold hover:text-gold"
