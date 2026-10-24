@@ -30,7 +30,7 @@ function AboutPage() {
       <PageHeader eyebrow={profile.tagline} title="About" />
       <div className="mt-12 grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,17rem)]">
         <div className="max-w-3xl">
-          <p className="text-lg leading-relaxed text-foreground/85 first-letter:float-left first-letter:mt-1 first-letter:mr-3 first-letter:font-serif first-letter:text-6xl first-letter:leading-[0.72] first-letter:text-primary">
+          <p className="border-l-2 border-gold pl-6 text-lg leading-relaxed text-foreground/85">
             I started programming and robotics at nine and have been building ever since.
             I&rsquo;m drawn to machine learning and applied AI, especially where they solve real
             problems. AquaSmart, my irrigation system for the Earth Prize, uses soil moisture and
