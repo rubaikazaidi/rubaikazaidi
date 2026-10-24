@@ -3,6 +3,7 @@ import { profile } from "@/data/portfolio";
 
 const nav = [
   { to: "/", label: "Profile" },
+  { to: "/about", label: "About" },
   { to: "/shooting", label: "Shooting" },
   { to: "/olympiads", label: "Olympiads" },
   { to: "/international", label: "International" },
