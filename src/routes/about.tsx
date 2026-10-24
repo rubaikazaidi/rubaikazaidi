@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/portfolio";
-import { profile } from "@/data/portfolio";
+import { profile, stats } from "@/data/portfolio";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -52,6 +52,24 @@ function AboutPage() {
           </p>
         </aside>
       </div>
+
+      <section className="mt-16 grid grid-cols-2 border-t border-primary/25 sm:grid-cols-4">
+        {stats.map((s, i) => (
+          <div
+            key={s.label}
+            className={`flex flex-col justify-between gap-3 border-t border-primary/20 px-4 py-7 sm:border-t-0 ${
+              i === 0 ? "" : "sm:border-l sm:border-primary/20"
+            }`}
+          >
+            <span className="block font-serif text-4xl leading-none text-primary sm:text-5xl">
+              {s.value}
+            </span>
+            <span className="block font-sans text-[10px] uppercase leading-snug tracking-[0.14em] text-muted-foreground">
+              {s.label}
+            </span>
+          </div>
+        ))}
+      </section>
     </>
   );
 }
