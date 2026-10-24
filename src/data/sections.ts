@@ -413,7 +413,7 @@ export const international: PortfolioItem[] = [
 ];
 
 export const sections = [
-  { key: "shooting", label: "Shooting", href: "/shooting", blurb: "Precision Athletics", items: shooting },
+  { key: "shooting", label: "Rifle Shooting", href: "/shooting", blurb: "Precision Athletics", items: shooting },
   { key: "olympiads", label: "Olympiads", href: "/olympiads", blurb: "Academic Excellence", items: olympiads },
   { key: "international", label: "International", href: "/international", blurb: "International Standing", items: international },
   { key: "committees", label: "Initiatives", href: "/committees", blurb: "Institutional Roles", items: committees },
