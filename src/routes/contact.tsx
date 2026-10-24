@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader, DocumentSlot } from "@/components/portfolio";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, Check, Copy, Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { ArrowUpRight, Check, Copy, Mail, Phone, MapPin, Linkedin, Download } from "lucide-react";
 import { profile } from "@/data/portfolio";
 
 export const Route = createFileRoute("/contact")({
