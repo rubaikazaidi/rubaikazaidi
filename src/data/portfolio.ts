@@ -49,6 +49,8 @@ export const profile = {
   age: 17,
   tagline: "Student | National Level Rifle Shooter | Tech Enthusiast",
   location: "Navi Mumbai, Maharashtra",
+  region: "Maharashtra, India",
+  resumeFile: "/documents/Rubaika-Zaidi-Resume.pdf",
   email: "rubaika.zaidi@outlook.com",
   phone: "+91 93725 93707",
   linkedin: "https://www.linkedin.com/in/rubaika-zaidi-b229983b6",

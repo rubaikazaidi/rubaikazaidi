@@ -46,7 +46,10 @@ function ContactPage() {
         </div>)}
         <div aria-live="polite" className="mt-3 text-xs text-primary">{copyError ? "Could not copy. Please select the contact detail instead." : copied ? "Copied to clipboard" : ""}</div>
         <div className="mt-6 flex items-center gap-3 text-sm text-muted-foreground"><MapPin className="size-5 text-primary" />{profile.location}</div>
-        <Button asChild className="mt-6"><a href={profile.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin />LinkedIn<ArrowUpRight /></a></Button>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Button asChild><a href={profile.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin />LinkedIn<ArrowUpRight /></a></Button>
+          <Button asChild variant="outline"><a href={profile.resumeFile} download="Rubaika-Zaidi-Resume.pdf" target="_top" rel="external noreferrer"><Download />Download resume (PDF)</a></Button>
+        </div>
         {profile.socials.filter((social) => !["LinkedIn", "Email"].includes(social.label)).map((social) => <Button key={social.label} variant="link" asChild className="mt-6"><a href={social.href} target="_blank" rel="noopener noreferrer">{social.label}<ArrowUpRight /></a></Button>)}
       </div>
       <aside className="border-t-4 border-gold pt-6"><p className="text-xs uppercase text-primary">Rubaika Zaidi</p><h2 className="mt-3 font-serif text-3xl">Curriculum Vitae</h2><div className="mt-5"><DocumentSlot doc={{ label: profile.cv.label, file: profile.cv.file, type: "other" }} /></div></aside>
